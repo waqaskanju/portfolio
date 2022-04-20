@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolop</title>
     <style>
+        body{
+            overflow-x: hidden;
+        }
         a {
             text-decoration: none;
             font-family: Poppins;
@@ -90,6 +93,139 @@
             text-align: left;
             color: #7F8CFF
         }
+
+        .ruler {
+            background: #EBEBFF;
+            transform: rotate(-46.14deg);
+
+            position: absolute;
+            width: 108.67px;
+            height: 19.44px;
+            left: 34.6px;
+            top: 218.92px;
+
+
+
+        }
+
+        .ellipse {
+            background-color: #6070FF;
+            border-radius: 50%;
+            position: absolute;
+            width: 80.48px;
+            height: 40.24px;
+            left: 139.2px;
+            top: 260.68px;
+            transform: rotate(-156.88deg);
+
+        }
+
+
+        .moon {
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 100px;
+            width: 100px;
+            box-shadow: -15px 15px 0 5px rgb(212, 39, 39);
+            border-radius: 50%;
+        }
+
+        .shapes {
+            display: flex;
+            min-height: 250px;
+            justify-content: space-between;
+        }
+        .left{
+            background-color: red;
+            flex-grow: 1;
+        }
+        .central{
+            background-color: blue;
+            flex-grow: 3;
+        }
+        .right{
+            background-color: green;
+            flex-grow: 1;
+            position: relative;
+        }
+        .clearfix{
+            clear: both;
+        }
+        .rectangle-7 {
+            position: absolute;
+            width: 56.01px;
+            height: 10.02px;
+            left: 693.25px;
+            top: 261.57px;
+
+            /* Theme 1 / Primary Colors 2 */
+
+            background: #6070FF;
+            transform: matrix(0.98, -0.21, -0.21, -0.98, 0, 0);
+        }
+
+        .ellipse-5 {
+            /* Ellipse 5 */
+
+
+            position: absolute;
+            width: 23px;
+            height: 23px;
+            left: 708px;
+            top: 257px;
+
+            /* Theme 1 / Primary Colors 4 */
+
+            background: #EBEBFF;
+        }
+
+        .rectangle-4 {
+            position: absolute;
+            width: 204px;
+            height: 47px;
+            /* Theme 1 / Primary Colors 4 */
+
+            background: #EBEBFF;
+            transform: rotate(-30deg)  translate(-20%, -100%);
+
+        }
+
+        .ellipse-3 {
+            position: absolute;
+            width: 224px;
+            height: 224px;
+            /* left: 1208px; */
+            top: 50%;
+            transform: translateY(-25%);
+            /* Theme 1 / Primary Colors 2 */
+            border-radius: 50%;
+            background: #6070FF;
+        }
+
+        .circle {
+            background: white;
+            border-radius: 50%;
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            top: 50%;
+            left:  50%;
+            transform: translate(-50%, -50%);
+        }
+        .ruler-2{
+            
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            /* Theme 1 / Primary Colors 4 */
+            top: 50%;
+            left: 50%;  
+            background-color: #ffffff;
+            transform: rotate(15deg) translateX(-20%); 
+        }
     </style>
 </head>
 
@@ -104,7 +240,27 @@
             </ul>
         </nav>
     </div>
+
+    <div class="shapes">
+        <div class="left">
+            <div class="ruler"></div>
+            <div class="ellipse"></div>
+        </div>
+        <div class="central">
+            <div class="rectangle-7"></div>
+            <div class="ellipse-5"></div>
+        </div>
+        <div class="right">
+            <div class="ellipse-3">
+                <div class="rectangle-4"></div>
+                <div class="circle"></div>
+                <div class="ruler-2"></div>    
+            </div>
+
+        </div>
+    </div>
     <div class="content">
+
         <main>
             <h1>
                 I'm Waqas Ahmad <br> Glad to see you!
