@@ -4,20 +4,17 @@ body {
 
 a {
   text-decoration: none;
-  font-family: Poppins;
+  font-family: Poppins, Arial, Verdana, Tahoma;;
   font-size: 15px;
   font-weight: 500;
   line-height: 20px;
-  letter-spacing: 0em;
   text-align: center;
-
 }
 
 .icon ul li {
   list-style-type: none;
   display: inline;
   padding-right: 20px;
-
 }
 
 .icon ul {
@@ -26,32 +23,28 @@ a {
 
 .container {
   display: flex;
-
 }
 
 nav ul li {
   list-style-type: none;
   display: inline;
   padding: 20px;
-
 }
 
 .logo {
   padding: 20px 10px 0px;
   flex-grow: 2;
-  font-family: Poppins;
+  font-family: Poppins Arial, Verdana, Tahoma;;
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
   letter-spacing: 0em;
   color: #6070FF;
-
 }
 
 .content {
   display: flex;
   justify-content: center;
-
 }
 
 .description {
@@ -59,7 +52,7 @@ nav ul li {
 }
 
 h1 {
-  font-family: Poppins;
+  font-family: Poppins Arial, Verdana, Tahoma;;
   font-size: 48px;
   font-weight: 700;
   line-height: 60px;
@@ -68,7 +61,7 @@ h1 {
 }
 
 .description {
-  font-family: Poppins;
+  font-family: Poppins Arial, Verdana, Tahoma;;
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
@@ -77,7 +70,7 @@ h1 {
 }
 
 #connect {
-  font-family: Poppins;
+  font-family: Poppins Arial, Verdana, Tahoma;;
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
@@ -95,9 +88,6 @@ h1 {
   height: 19.44px;
   left: 34.6px;
   top: 218.92px;
-
-
-
 }
 
 .ellipse {
@@ -110,9 +100,7 @@ h1 {
   top: 260.68px;
   transform: translate(-50%, -50%);
   border-radius: 150px 150px 0 0;
-
 }
-
 
 .moon {
 
@@ -133,17 +121,14 @@ h1 {
 }
 
 .left {
-  /* background-color: red; */
   flex-grow: 1;
 }
 
 .central {
-  /* background-color: blue; */
   flex-grow: 3;
 }
 
 .right {
-  /* background-color: green; */
   flex-grow: 1;
   position: relative;
 }
@@ -158,25 +143,16 @@ h1 {
   height: 10.02px;
   left: 693.25px;
   top: 261.57px;
-
-  /* Theme 1 / Primary Colors 2 */
-
   background: #6070FF;
   transform: matrix(0.98, -0.21, -0.21, -0.98, 0, 0);
 }
 
 .ellipse-5 {
-  /* Ellipse 5 */
-
-
   position: absolute;
   width: 23px;
   height: 23px;
   left: 708px;
   top: 257px;
-
-  /* Theme 1 / Primary Colors 4 */
-
   background: #EBEBFF;
 }
 
@@ -184,8 +160,6 @@ h1 {
   position: absolute;
   width: 204px;
   height: 47px;
-  /* Theme 1 / Primary Colors 4 */
-
   background: #EBEBFF;
   transform: rotate(-30deg) translate(-20%, -100%);
 
@@ -195,10 +169,8 @@ h1 {
   position: absolute;
   width: 224px;
   height: 224px;
-  /* left: 1208px; */
   top: 50%;
   transform: translateY(-25%);
-  /* Theme 1 / Primary Colors 2 */
   border-radius: 50%;
   background: #6070FF;
 }
@@ -207,7 +179,6 @@ h1 {
   background: white;
   border-radius: 50%;
   position: absolute;
-
 }
 
 .central-circle {
@@ -216,7 +187,6 @@ h1 {
   transform: translate(-50%, -50%);
   width: 150px;
   height: 150px;
-
 }
 
 .outer-circle {
@@ -230,20 +200,15 @@ h1 {
 }
 
 .ruler-2 {
-
-
   width: 200px;
   height: 200px;
-  /* Theme 1 / Primary Colors 4 */
   top: 50%;
   left: 50%;
   background-color: #ffffff;
   transform: rotate(15deg) translateX(-20%);
 }
 
-
 .circle-2 {
-  /*Circle for bootom left*/
   background: #EBEBFF;
   border-radius: 50%;
   width: 46px;
@@ -275,10 +240,8 @@ bottom-shapes {
   width: 224px;
   height: 224px;
   left: 550px;
-  /* left: 1208px; */
   top: 50%;
   transform: translateY(-25%);
-  /* Theme 1 / Primary Colors 2 */
   border-radius: 50%;
   background: #ffa760;
 }
@@ -291,20 +254,14 @@ bottom-shapes {
   position: relative;
   top: -70%;
   left: 0;
-
-
-
 }
 
 .circle-bottom {
   background: #6070FF;
   border-radius: 50%;
-
   width: 47px;
   height: 47px;
-
   transform: translate(-50%, -50%);
-
 }
 
 .ellipse-bottom {
@@ -314,8 +271,6 @@ bottom-shapes {
   height: 18.45px;
   transform: rotate(180deg);
   border-radius: 150px 150px 0 0;
-
-
 }
 
 #bottom-left {
@@ -328,7 +283,6 @@ bottom-shapes {
 .bottom-shapes {
   display: flex;
   flex-direction: row;
-  /* border: 1px solid orange; */
   flex-wrap: wrap;
   min-height: 100px;
 }
