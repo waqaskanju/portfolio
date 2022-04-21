@@ -1,35 +1,31 @@
 /* **************************** */
 /* Whole Page Stylings  */
 /* **************************** */
-
 :root {
   --nav-bg: #fff;
   --main-clr: #6070ff;
   --secondary-clr: #ebebff;
-;
-
   --nav-shadow: 0px 3px var(--main-clr);
-  font-size: 9px;
+  font-size: 10px;
 }
 
-*,
-*::after,
-*::before {
+/* Use Basic Rest   */
+
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
+
 body {
   overflow-x: hidden;
   font-size: 16px ;
-  /* min-height: 100vh; */
 }
-
 
 /* ************************* */
 /* Navigation Things  */
 /* ************************* */
+
 nav {
   display: flex;
   align-items: center;
@@ -48,19 +44,16 @@ nav .logo {
   font-size: 22px;
   font-family: Poppins, Arial, Verdana, Tahoma, sans-serif;
   font-weight: 800;
-  /* text-shadow:  0px 3px var(--main-clr) */
 }
 
 nav ul {
   --padding: 20px;
   --font-size: 17px;
-
   list-style: none;
   display: flex;
   align-items: center;
   font-size: var(--font-size);
   overflow-y: hidden;
-  transition: 1s cubic-bezier(.68,-0.55,.27,10.55);
   box-shadow: var(--nav-shadow);
 }
 
@@ -83,7 +76,6 @@ nav ul li a::after {
   position: absolute;
   bottom: 0;
   left: 0;
-  transition: 0.3s ease;
 }
 
 nav ul li a:hover::after {
@@ -108,7 +100,7 @@ nav .menu span {
   height: 2px;
   border-radius: 99px;
   background: #6070FF;
-  transition: 0.3s ease;
+  transition: 0.3s;
   transform-origin: left;
 }
 
@@ -141,7 +133,6 @@ nav .menu.active span:nth-child(2) {
 
   nav ul {
     --height: 0px;
-
     flex-direction: column;
     background: var(--nav-bg);
     position: absolute;
@@ -151,13 +142,13 @@ nav .menu.active span:nth-child(2) {
     height: var(--height);
     transition: 1s cubic-bezier(.68,-0.55,.27,1.55);
   }
+
+/* To Show the menu in Mobile Mode Increse height of the list containg the menu */
+
   nav ul.active {
     --height: calc(
       (((var(--padding) * 2) + (var(--font-size) * 1.5))) * var(--childenNumber)
     );
-    /*   (Block Level Padding + The Font Size) * The Number of Children   */
-    
-    
     transition: 1s ease;
   }
 
@@ -185,20 +176,18 @@ nav .menu.active span:nth-child(2) {
     font-size: 6px;
   }  
 }
+
 @media only screen and (max-width: 500px) {
   :root {
     font-size: 5px;
   }  
 }
 
-
 @media only screen and (max-width: 400px) {
   :root {
     font-size: 4px;
   }  
 }
-
-
 
 /* ******************************* */
 /* Nvigation List And Links  */
@@ -241,6 +230,7 @@ nav ul li {
   line-height: 20px;
   color: #6070ff;
 }
+
 /* ************************************************************** */
 /* Main Page Styling  */
 /* ************************************************************** */
@@ -248,11 +238,11 @@ nav ul li {
 .content {
   display: flex;
   justify-content: center; 
-  
 }
 
 h1 {
   font-family: Poppins, Arial, Verdana, Tahoma, sans-serif;
+  color: #172b4d;
   font-size: 4.8rem;
   font-weight: 700;
   line-height: 6rem;
@@ -267,6 +257,7 @@ h1 {
   line-height: 2.8rem;
   text-align: left;
   max-width: 80rem;
+  color: #344563;
 }
 
 #connect {
@@ -277,6 +268,7 @@ h1 {
   text-align: left;
   color: #7f8cff;
 }
+
 /* *************************************** */
 /* Shpaes */
 /* *************************************** */
@@ -296,7 +288,6 @@ h1 {
   flex: 1;
 }
 
-
 /* **************************** */
 /*    Shpaes Container         */
 /* *************************** */
@@ -307,7 +298,6 @@ h1 {
 }
 .shape-container-1{
   top: 30%;
-  /* left: ; */
 }
 
 .shape-container-2{
@@ -319,53 +309,54 @@ h1 {
 .shape-container-3{
   top:  20%;
   right: 5%;
-
 }
 
 .shape-container-4{
   top: 8rem;
   left: 2rem;
 }
+
 .shape-container-5{
   top: 8rem;
   left: 60%;
 }
-/* Rulers Only */
+
+/* Rulers  */
 
 .ruler{
   --width: 5rem;
   --height: 1rem;
   background-color: red;
-
 }
+
 .ruler-1{
   width: calc( var(--width) * 2  );
   height: calc( var(--height) * 2);
   transform: rotate(-46.14deg) ;
   background-color: var(--secondary-clr);
-  
-
 }
+
 .ruler-2{
   width: calc( var(--width) );
   height: calc( var(--height) );
   transform: matrix(0.98, -0.21, -0.21, -0.98, 0, 0) ;
   background-color: var(--main-clr);
-  
 }
+
 .ruler-3{
   width: calc( var(--width) * 3 );
   height:calc(  var(--height) * 3);
   transform: rotate(-30deg) translate(-4rem, 0.5rem);
   background-color: var(--secondary-clr);
 }
+
 .ruler-4{
   width: calc( var(--width) * 2.8  );
   height: calc( var(--height) * 2.8);
   transform: rotate(23.14deg) ;
   background-color: var(--secondary-clr);
-  
 }
+
 /* ********************* */
 /* Ellipse Work */
 /* ********************* */
@@ -389,20 +380,21 @@ h1 {
   border-radius: 150px 150px 0 0;
   transform: rotate(-156deg) translate(-4.8rem, 0.8rem);
   background-color: var(--main-clr);
-
 }
+
 .ellipse-2{
   width: calc(var(--width) );
   height: calc(var(--height));
   transform: translate(2rem, 0);
   background-color: var(--secondary-clr);
-  
 }
+
 .ellipse-3{
   width: calc(var(--width) * 7.7);
   height: calc(var(--height) * 7.7);
   background-color: var(--main-clr);
 }
+
 .ellipse-4{
   width: calc(var(--width) * 5.6);
   height:calc(var(--height) * 5.6);
@@ -410,6 +402,7 @@ h1 {
   left: 50%;
   transform: translate(-50%, -37%);
 }
+
 .ellipse-5{
   z-index: 1000;
   --transform-x: 3.5rem;
@@ -419,6 +412,7 @@ h1 {
   height:calc(var(--height) * 15.6);
   background-color: white;
 }
+
 .ellipse-6{
   width: calc(var(--width) * 3.4 );
   height: calc(var(--height) * 1.7);
@@ -426,6 +420,7 @@ h1 {
   transform: rotate(-176deg) translate(-4.8rem, 0.8rem) scale(0.7);
   background-color: var(--main-clr);
 }
+
 .ellipse-7{
   width: calc(var(--width) );
   height: calc(var(--height));
@@ -435,12 +430,14 @@ h1 {
   top: -3rem;
   left: 1rem;
 }
+
 .ellipse-8{
   width: calc(var(--width) );
   height:calc(var(--height) );
   transform: scale(0.5);
   background-color: #fff;
 }
+
 .ellipse-9{
   z-index: 1000;
   width: calc(var(--width) * 2.6);
@@ -450,6 +447,7 @@ h1 {
   top: -5rem;
   left: -1.5rem;
 }
+
 .ellipse-10{
     width: calc(var(--width) * 1.5 );
     height: calc(var(--height) * 1.5 );
@@ -458,229 +456,4 @@ h1 {
     position: absolute;
     top: -1.8rem;
     left: 6rem;
-
-    }
-/* Grabage Styling  */
-
-/* .ruler {
-  background: #ebebff;
-  transform: rotate(-46.14deg);
-  position: absolute;
-  width: 108.67px;
-  height: 19.44px;
-  left: 34.6px;
-  top: 218.92px;
-}
-
-.ellipse {
-  background-color: #6070ff;
-  position: absolute;
-  width: 80.48px;
-  height: 40.24px;
-  left: 139.2px;
-  top: 260.68px;
-  transform: translate(-50%, -50%);
-  border-radius: 150px 150px 0 0;
-}
-
-.moon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 100px;
-  width: 100px;
-  box-shadow: -15px 15px 1 5px rgb(212, 39, 39);
-  border-radius: 50%;
-} */
-
-/* Removinng the grabage styling */
-
-/* .shapes {
-  z-index: -1;
-  padding-top: 10rem;
-  display: flex;
-  min-height: 250px;
-  justify-content: space-between;
-}
-
-.left {
-  flex-grow: 1;
-}
-
-.central {
-  flex-grow: 3;
-}
-
-.right {
-  flex-grow: 1;
-  position: relative;
-}
-
-.clearfix {
-  clear: both;
-}
-
-.rectangle-7 {
-  position: absolute;
-  width: 56.01px;
-  height: 10.02px;
-  left: 693.25px;
-  top: 261.57px;
-  background: #6070ff;
-  transform: matrix(0.98, -0.21, -0.21, -0.98, 0, 0);
-}
-
-.ellipse-5 {
-  position: absolute;
-  width: 23px;
-  height: 23px;
-  left: 708px;
-  top: 257px;
-  background: #ebebff;
-}
-
-.rectangle-4 {
-  position: absolute;
-  width: 204px;
-  height: 47px;
-  background: #ebebff;
-  transform: rotate(-30deg) translate(-20%, -100%);
-}
-
-.ellipse-3 {
-  position: absolute;
-  width: 224px;
-  height: 224px;
-  top: 50%;
-  transform: translateY(-25%);
-  border-radius: 50%;
-  background: #6070ff;
-}
-
-.circle {
-  background: white;
-  border-radius: 50%;
-  position: absolute;
-}
-
-.central-circle {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 150px;
-  height: 150px;
-}
-
-.outer-circle {
-  --percent: -15%;
-  --size: 500px;
-
-  top: 50%;
-  left: 50%;
-  transform: translate(var(--percent), var(--percent));
-  width: var(--size);
-  height: var(--size);
-}
-
-.ruler-2 {
-  background-color: #fff;
-  transform: rotate(23.34deg);
-  width: 108.67px;
-  height: 19.44px;
-  position: relative;
-  top: -70%;
-  left: 0;
-}
-
-.circle-2 {
-  background: #ebebff;
-  border-radius: 50%;
-  width: 46px;
-  height: 46px;
-  transform: rotate(70deg);
-  position: absolute;
-  top: -88%;
-  left: -2%;
-}
-
-.circle-2-friend {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: #fff;
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  box-shadow: 10px 4px 0 #fff;
-}
-
-.ellipse-4 {
-  position: relative;
-  width: 224px;
-  height: 224px;
-  left: 550px;
-  top: 50%;
-  transform: translateY(-25%);
-  border-radius: 50%;
-  background: #ffa760;
-}
-
-.circle-bottom {
-  background: #6070ff;
-  border-radius: 50%;
-  width: 47px;
-  height: 47px;
-  transform: translate(-50%, -50%);
-}
-
-.ellipse-bottom {
-  background-color: #6070ff;
-  width: 36px;
-  height: 18.45px;
-  transform: rotate(180deg);
-  border-radius: 150px 150px 0 0;
-}
-
-#bottom-left {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
-.bottom-shapes {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  min-height: 100px;
-}
-
-.first {
-  flex-basis: 50%;
-  left: 30%;
-  position: relative;
-}
-
-.second {
-  flex-basis: 50%;
-  position: relative;
-  right: -25%;
-}
-
-.third {
-  flex-basis: 50%;
-  left: 30%;
-  position: relative;
-  top: -15px;
-}
-
-.fourth {
-  flex-basis: 50%;
-  position: relative;
-  right: -20%;
-  bottom: 30%;
-}
-
-*********** */
+  }
