@@ -4,11 +4,17 @@ body {
 
 a {
   text-decoration: none;
-  font-family: Poppins, Arial, Verdana, Tahoma;;
+  font-family: Poppins, Arial, Verdana, Tahoma, sans-serif;
   font-size: 15px;
   font-weight: 500;
   line-height: 20px;
   text-align: center;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline;
+  padding: 20px;
 }
 
 .icon ul li {
@@ -18,28 +24,20 @@ a {
 }
 
 .icon ul {
-  padding: 0px;
+  padding: 1px;
 }
 
 .container {
   display: flex;
 }
 
-nav ul li {
-  list-style-type: none;
-  display: inline;
-  padding: 20px;
-}
-
 .logo {
-  padding: 20px 10px 0px;
+  padding: 20px 10px 1px;
   flex-grow: 2;
-  font-family: Poppins Arial, Verdana, Tahoma;;
-  font-size: 18px;
+  font-family: Poppins, Arial, Verdana, Tahoma, sans-serif;
   font-weight: 700;
   line-height: 20px;
-  letter-spacing: 0em;
-  color: #6070FF;
+  color: #6070ff;
 }
 
 .content {
@@ -52,7 +50,7 @@ nav ul li {
 }
 
 h1 {
-  font-family: Poppins Arial, Verdana, Tahoma;;
+  font-family: Poppins, Arial, Verdana, Tahoma,  sans-serif;
   font-size: 48px;
   font-weight: 700;
   line-height: 60px;
@@ -61,28 +59,25 @@ h1 {
 }
 
 .description {
-  font-family: Poppins Arial, Verdana, Tahoma;;
+  font-family: Poppins, Arial, Verdana, Tahoma,  sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
-  letter-spacing: 0em;
   text-align: left;
 }
 
 #connect {
-  font-family: Poppins Arial, Verdana, Tahoma;;
+  font-family: Poppins Arial, Verdana, Tahoma,  sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
-  letter-spacing: 0em;
   text-align: left;
-  color: #7F8CFF
+  color: #7F8CFF;
 }
 
 .ruler {
   background: #EBEBFF;
   transform: rotate(-46.14deg);
-
   position: absolute;
   width: 108.67px;
   height: 19.44px;
@@ -110,7 +105,7 @@ h1 {
   transform: translate(-50%, -50%);
   height: 100px;
   width: 100px;
-  box-shadow: -15px 15px 0 5px rgb(212, 39, 39);
+  box-shadow: -15px 15px 1 5px rgb(212, 39, 39);
   border-radius: 50%;
 }
 
@@ -143,7 +138,7 @@ h1 {
   height: 10.02px;
   left: 693.25px;
   top: 261.57px;
-  background: #6070FF;
+  background: #6070ff;
   transform: matrix(0.98, -0.21, -0.21, -0.98, 0, 0);
 }
 
