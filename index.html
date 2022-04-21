@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolop</title>
     <style>
-        body{
+        body {
             overflow-x: hidden;
         }
+
         a {
             text-decoration: none;
             font-family: Poppins;
@@ -116,7 +117,8 @@
             height: 40.24px;
             left: 139.2px;
             top: 260.68px;
-            transform: rotate(-156.88deg);
+            transform: translate(-50%, -50%);
+            border-radius: 150px 150px 0 0;
 
         }
 
@@ -138,22 +140,27 @@
             min-height: 250px;
             justify-content: space-between;
         }
-        .left{
-            background-color: red;
+
+        .left {
+            /* background-color: red; */
             flex-grow: 1;
         }
-        .central{
-            background-color: blue;
+
+        .central {
+            /* background-color: blue; */
             flex-grow: 3;
         }
-        .right{
-            background-color: green;
+
+        .right {
+            /* background-color: green; */
             flex-grow: 1;
             position: relative;
         }
-        .clearfix{
+
+        .clearfix {
             clear: both;
         }
+
         .rectangle-7 {
             position: absolute;
             width: 56.01px;
@@ -189,7 +196,7 @@
             /* Theme 1 / Primary Colors 4 */
 
             background: #EBEBFF;
-            transform: rotate(-30deg)  translate(-20%, -100%);
+            transform: rotate(-30deg) translate(-20%, -100%);
 
         }
 
@@ -209,22 +216,148 @@
             background: white;
             border-radius: 50%;
             position: absolute;
+          
+        }
+
+        .central-circle{
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             width: 150px;
             height: 150px;
-            top: 50%;
-            left:  50%;
-            transform: translate(-50%, -50%);
+        
         }
-        .ruler-2{
-            
-            position: absolute;
+        .outer-circle{
+            --percent: -15%;
+            --size: 500px;
+            top: 50%;
+            left: 50%;
+            transform: translate(var(--percent),  var(--percent));    
+            width: var(--size);
+            height: var(--size);
+        }
+
+        .ruler-2 {
+
+           
             width: 200px;
             height: 200px;
             /* Theme 1 / Primary Colors 4 */
             top: 50%;
-            left: 50%;  
+            left: 50%;
             background-color: #ffffff;
-            transform: rotate(15deg) translateX(-20%); 
+            transform: rotate(15deg) translateX(-20%);
+        }
+
+
+        .circle-2 {
+            /*Circle for bootom left*/
+            background: #EBEBFF;
+            border-radius: 50%;
+            width: 46px;
+            height: 46px;
+            transform: rotate(70deg);
+            position: absolute;
+            top: -88%;
+            left: -2%;
+        }
+        .circle-2-friend{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #fff;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            box-shadow: 10px 4px 0 #fff;
+        }
+
+        bottom-shapes {
+            padding-top: 500px;
+        }
+
+        .ellipse-4 {
+            position: relative;
+            width: 224px;
+            height: 224px;
+            left: 550px;
+            /* left: 1208px; */
+            top: 50%;
+            transform: translateY(-25%);
+            /* Theme 1 / Primary Colors 2 */
+            border-radius: 50%;
+            background: #ffa760;
+        }
+
+        .ruler-2 {
+            background: #EBEBFF;
+            transform: rotate(23.34deg);
+            width: 108.67px;
+            height: 19.44px;
+            position: relative;
+            top: -70%;
+            left: 0;
+            
+
+
+        }
+
+        .circle-bottom {
+            background: #6070FF;
+            border-radius: 50%;
+
+            width: 47px;
+            height: 47px;
+
+            transform: translate(-50%, -50%);
+          
+        }
+        
+        .ellipse-bottom {
+            background-color: #6070FF;
+            border-radius: 50%;
+            width: 36px;
+            height: 18.45px;
+            transform: rotate(180deg);
+            border-radius: 150px 150px 0 0;
+           
+
+        }
+
+        #bottom-left {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .bottom-shapes {
+            display: flex;
+            flex-direction: row;
+            /* border: 1px solid orange; */
+         flex-wrap: wrap;
+        min-height: 100px;
+        }
+        .first{ 
+        flex-basis: 50%;
+        left:30%;
+        position: relative;
+        }
+        .second{flex-basis: 50%;
+        position: relative;
+        right:-25%;
+        
+        }
+        .third{flex-basis: 50%;
+            left:30%;
+        position: relative;
+        top: -15px;
+        }
+        .fourth{ flex-basis: 50%;
+            position: relative;
+        right:-20%;
+        bottom:30%;
         }
     </style>
 </head>
@@ -253,8 +386,8 @@
         <div class="right">
             <div class="ellipse-3">
                 <div class="rectangle-4"></div>
-                <div class="circle"></div>
-                <div class="ruler-2"></div>    
+                <div class="circle central-circle"></div>
+                <div class="circle outer-circle"></div>
             </div>
 
         </div>
@@ -300,6 +433,15 @@
             </div>
         </main>
     </div>
+    <div class="bottom-shapes">
+        <div class="first"> <div class="ellipse-bottom"></div></div>
+        <div class="second"> <div class="circle-bottom"> </div></div>
+        <div class="third"><div class="circle-2">
+            <div class="circle-2-friend"></div>
+        </div>    </div>
+        <div class="fourth"><div class="ruler-2"> </div></div>
+    </div>
+
 </body>
 
 </html>
