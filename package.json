@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/waqaskanju/Portfolio/issues"
   },
-  "homepage": "https://github.com/waqaskanju/Portfolio#readme"
+  "homepage": "https://github.com/waqaskanju/Portfolio#readme",
+  "devDependencies": {
+    "stylelint-config-recommended": "^7.0.0"
+  },
+  "dependencies": {
+    "stylelint-config-standard": "^25.0.0"
+  }
 }
