@@ -69,11 +69,11 @@ h1 {
   font-weight: 400;
   line-height: 28px;
   text-align: left;
-  color: #7F8Cff;
+  color: #7f8cff;
 }
 
 .ruler {
-  background: #EBEBff;
+  background: #ebebff;
   transform: rotate(-46.14deg);
   position: absolute;
   width: 108.67px;
@@ -152,7 +152,6 @@ h1 {
   height: 47px;
   background: #ebebff;
   transform: rotate(-30deg) translate(-20%, -100%);
-
 }
 
 .ellipse-3 {
@@ -162,7 +161,7 @@ h1 {
   top: 50%;
   transform: translateY(-25%);
   border-radius: 50%;
-  background: #6070FF;
+  background: #6070ff;
 }
 
 .circle {
@@ -190,16 +189,18 @@ h1 {
 }
 
 .ruler-2 {
-  width: 200px;
-  height: 200px;
-  top: 50%;
-  left: 50%;
-  background-color: #ffffff;
-  transform: rotate(15deg) translateX(-20%);
+  background-color:#ffffff;
+  background: #EBEBFF;
+  transform: rotate(23.34deg);
+  width: 108.67px;
+  height: 19.44px;
+  position: relative;
+  top: -70%;
+  left: 0;
 }
 
 .circle-2 {
-  background: #EBEBFF;
+  background: #ebebff;
   border-radius: 50%;
   width: 46px;
   height: 46px;
@@ -221,7 +222,7 @@ h1 {
   box-shadow: 10px 4px 0 #fff;
 }
 
-bottom-shapes {
+.bottom-shapes {
   padding-top: 500px;
 }
 
@@ -236,18 +237,8 @@ bottom-shapes {
   background: #ffa760;
 }
 
-.ruler-2 {
-  background: #EBEBFF;
-  transform: rotate(23.34deg);
-  width: 108.67px;
-  height: 19.44px;
-  position: relative;
-  top: -70%;
-  left: 0;
-}
-
 .circle-bottom {
-  background: #6070FF;
+  background: #6070ff;
   border-radius: 50%;
   width: 47px;
   height: 47px;
@@ -255,7 +246,7 @@ bottom-shapes {
 }
 
 .ellipse-bottom {
-  background-color: #6070FF;
+  background-color: #6070ff;
   width: 36px;
   height: 18.45px;
   transform: rotate(180deg);
