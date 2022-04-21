@@ -45,12 +45,8 @@ nav ul li {
   justify-content: center;
 }
 
-.description {
-  max-width: 500px;
-}
-
 h1 {
-  font-family: Poppins, Arial, Verdana, Tahoma,  sans-serif;
+  font-family: Poppins, Arial, Verdana, Tahoma, sans-serif;
   font-size: 48px;
   font-weight: 700;
   line-height: 60px;
@@ -59,24 +55,25 @@ h1 {
 }
 
 .description {
-  font-family: Poppins, Arial, Verdana, Tahoma,  sans-serif;
+  font-family: Poppins, Arial, Verdana, Tahoma, sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
   text-align: left;
+  max-width: 500px;
 }
 
 #connect {
-  font-family: Poppins Arial, Verdana, Tahoma,  sans-serif;
+  font-family: Poppins, Arial, Verdana, Tahoma, sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
   text-align: left;
-  color: #7F8CFF;
+  color: #7F8Cff;
 }
 
 .ruler {
-  background: #EBEBFF;
+  background: #EBEBff;
   transform: rotate(-46.14deg);
   position: absolute;
   width: 108.67px;
@@ -86,8 +83,7 @@ h1 {
 }
 
 .ellipse {
-  background-color: #6070FF;
-  border-radius: 50%;
+  background-color: #6070ff;
   position: absolute;
   width: 80.48px;
   height: 40.24px;
@@ -98,7 +94,6 @@ h1 {
 }
 
 .moon {
-
   position: absolute;
   top: 50%;
   left: 50%;
@@ -148,14 +143,14 @@ h1 {
   height: 23px;
   left: 708px;
   top: 257px;
-  background: #EBEBFF;
+  background: #ebebff;
 }
 
 .rectangle-4 {
   position: absolute;
   width: 204px;
   height: 47px;
-  background: #EBEBFF;
+  background: #ebebff;
   transform: rotate(-30deg) translate(-20%, -100%);
 
 }
@@ -261,7 +256,6 @@ bottom-shapes {
 
 .ellipse-bottom {
   background-color: #6070FF;
-  border-radius: 50%;
   width: 36px;
   height: 18.45px;
   transform: rotate(180deg);
@@ -292,7 +286,6 @@ bottom-shapes {
   flex-basis: 50%;
   position: relative;
   right: -25%;
-
 }
 
 .third {
