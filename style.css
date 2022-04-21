@@ -181,6 +181,7 @@ h1 {
 .outer-circle {
   --percent: -15%;
   --size: 500px;
+
   top: 50%;
   left: 50%;
   transform: translate(var(--percent), var(--percent));
@@ -189,8 +190,7 @@ h1 {
 }
 
 .ruler-2 {
-  background-color:#ffffff;
-  background: #EBEBFF;
+  background-color: #fff;
   transform: rotate(23.34deg);
   width: 108.67px;
   height: 19.44px;
@@ -220,10 +220,6 @@ h1 {
   height: 35px;
   border-radius: 50%;
   box-shadow: 10px 4px 0 #fff;
-}
-
-.bottom-shapes {
-  padding-top: 500px;
 }
 
 .ellipse-4 {
