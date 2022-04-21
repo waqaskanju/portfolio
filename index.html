@@ -10,45 +10,83 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="logo"> My Logo </div>
-        <nav>
-            <ul>
-                <li> <a href="#"> Portfolio</a> </li>
-                <li> <a href="#"> About</a> </li>
-                <li> <a href="#"> Contact</a> </li>
-            </ul>
-        </nav>
-    </div>
 
-    <div class="shapes">
+    <nav>
+        <div>
+            <a href="#" class="logo">My Logo</a>
+        </div>
+        <div>
+            <ul id="nav">
+                <li><a href="#">Protfolio</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="menu" id="menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- <div class="shapes">
         <div class="left">
-            <div class="ruler"></div>
-            <div class="ellipse"></div>
+            <div class="ruler ruler-1"></div>
+            <div class="ellipse ellipse-1"></div>
         </div>
         <div class="central">
-            <div class="rectangle-7"></div>
-            <div class="ellipse-5"></div>
+            <div class="rectangle rectangle-7"></div>
+            <div class="ellipse ellipse-5"></div>
         </div>
         <div class="right">
             <div class="ellipse-3">
-                <div class="rectangle-4"></div>
+                <div class="rectangle rectangle-4"></div>
                 <div class="circle central-circle"></div>
                 <div class="circle outer-circle"></div>
             </div>
 
         </div>
+    </div> -->
+
+    <div class="shapes top">
+        <div class="flex-item flex-item-1">
+            <div class="shape-container shape-container-1">
+                <div class="ruler ruler-1"></div>
+                <div class="ellipse ellipse-1"></div>
+            </div>
+        </div>
+
+        <div class="flex-item flex-item-2">
+            <div class="shape-container shape-container-2">
+                <div class="ruler ruler-2"></div>
+                <div class="ellipse ellipse-2"></div>
+            </div>
+        </div>
+
+        <div class="flex-item flex-item-3">
+            <div class="shape-container shape-container-3">
+                <div class="ruler ruler-3"></div>
+                <div class="ellipse ellipse-3">
+                    <div class="ellipse ellipse-4 ellipse-hidden"></div>
+                    <div class="ellipse ellipse-5 ellipse-hidden"></div>
+                </div>
+
+            </div>
+        </div>
+
     </div>
     <div class="content">
 
         <main>
             <h1>
-                I'm Waqas Ahmad <br> Glad to see you!
+                I’m Alexandra
+                <br>
+                Glad to see you!
             </h1>
-            <p class="description">I’m a software developer! I can help you build a product , feature or website Look
-                through some of my work
-                and experience! If you like what you see and have a project you need coded, don’t hestiate to contact
-                me.
+            <p class="description">
+                I’m a software developer! I can help you build a product , feature or website Look through some of my
+                work and experience! If you like what you see and have a project you need coded, don’t hestiate to
+                contact me.
             </p>
             <p id="connect">LETS CONNECT</p>
             <div class="icon">
@@ -80,23 +118,33 @@
             </div>
         </main>
     </div>
-    <div class="bottom-shapes">
-        <div class="first">
-            <div class="ellipse-bottom"></div>
-        </div>
-        <div class="second">
-            <div class="circle-bottom"> </div>
-        </div>
-        <div class="third">
-            <div class="circle-2">
-                <div class="circle-2-friend"></div>
+
+    <div class="shapes bottom">
+        <div class="flex-item flex-item-1">
+            <div class="shape-container shape-container-4">
+                <div class="ellipse ellipse-6">
+                    <div class="ellipse ellipse-7">
+                        <div class="ellipse ellipse-8"></div>
+                        <div class="ellipse ellipse-9"></div>
+                    </div>
+                    
+                </div>
+
             </div>
         </div>
-        <div class="fourth">
-            <div class="ruler-2"> </div>
-        </div>
-    </div>
 
+        <div class="flex-item flex-item-2">
+            <div class="shape-container shape-container-5">
+                <div class="ruler ruler-4"></div>
+                <div class="ellipse ellipse-10"></div>
+            </div>
+        </div>
+
+ 
+
+    </div>
+        
+    <script src="script.js"></script>
 </body>
 
 </html>
