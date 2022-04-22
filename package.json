@@ -17,10 +17,9 @@
   },
   "homepage": "https://github.com/waqaskanju/Portfolio#readme",
   "devDependencies": {
-    "stylelint": "^13.13.1",
-    "stylelint-config-recommended": "^7.0.0",
-    "stylelint-config-standard": "^21.0.0",
-    "stylelint-csstree-validator": "^1.9.0",
-    "stylelint-scss": "^3.21.0"
+    "stylelint-config-recommended": "^7.0.0"
+  },
+  "dependencies": {
+    "stylelint-config-standard": "^25.0.0"
   }
 }
