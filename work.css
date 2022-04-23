@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,600&display=swap');
+
 :root {
   --default-font: 'Poppins';
 }
@@ -271,7 +273,128 @@ ul.big_circle {
 }
 
 .contact{
-  background: #6070FF;
+
   
+  /* Primary/B400 */
+  
+  background: #6070FF url("images/contact-Shapes.png");
+  background-size: 61%;
+  background-repeat: no-repeat;
+  background-position: 155px 26px;
+  border-radius: 100px 0 0 0;
+  padding: 5rem 1.5rem;
+  margin-top: 3rem;
+  position: relative;
+}
+.contact_flex{
+  flex-direction: column;
+  align-items: center;
+}
+.contact_header{
+
+  /* Header / 2 */
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  /* or 130% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* Neutrals/N0 */
+
+  color: #FFFFFF;
 }
 
+.contact_paragraph{
+
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  /* or 140% */
+
+  text-align: center;
+
+  /* Primary/B50 */
+
+  color: #EBEBFF;
+}
+.contact_form{
+  margin: 2rem 1rem;
+}
+.contact_input{
+  /* Mono/White */
+
+  background: #FFFFFF;
+  /* Base/100 */
+
+  border: 1px solid #CFD8DC;
+  border-radius: 8px;
+  padding: 1rem 1rem 1rem 2rem;
+  font-size: 17px;
+  line-height: 20px;
+
+}
+.contact_textarea{
+  /* Mono/White */
+  line-height: 24px;
+
+  background: #FFFFFF;
+  /* Base/100 */
+
+  border: 1px solid #CFD8DC;
+  border-radius: 8px;
+  padding: 0.5rem;
+  font-size: 15px;
+}
+
+.contact_submit{
+  /* Normal Button/Primary/Enabled */
+
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 16px;
+  width: 140px;
+  height: 48px;
+  /* Neutrals/N0 */
+
+  background: #FFFFFF;
+  border-radius: 8px;
+
+  /* Button /Normal */
+
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  /* identical to box height, or 141% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  /* Primary/B400 */
+
+  color: #6070FF;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 0px;
+}
