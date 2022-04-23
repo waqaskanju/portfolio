@@ -19,45 +19,26 @@ img {
   height: auto;
 }
 
-input, textarea{
+input,
+textarea {
   width: 100%;
   margin: 0.5rem 0;
 }
+
 .grid-container {
   display: grid;
-  /* border: 1px solid green; */
   max-width: 375px;
-
-  /* grid-template-columns: 375px; */
-
-  /*  place-items: center; */
-
   justify-content: center;
 }
 
 .grid-item {
   padding: 10px;
-  /* border: 1px solid red; */
   justify-content: center;
-}
-
-.grid-item-1 img {
-
 }
 
 .flex-container {
   display: flex;
   flex-direction: column;
-}
-
-.flex-item {
-  /* border: 1px solid blueviolet; */
-}
-
-.flex-item-2{
-}
-
-.flex-item-3{
 }
 
 .project_name {
@@ -115,33 +96,33 @@ input, textarea{
   margin: 12px 0;
 }
 
-.big_circle li img{
+.big_circle li img {
   height: 48px;
   width: 48px;
   left: 12px;
   top: 9px;
-  border-radius: 0px;
 }
 
 .big_circle li span {
-  
   position: absolute;
   height: 24px;
   left: 76px;
   right: 12px;
-  top: calc(50% - 24px/2 - 0.36px);
+  top: calc(50% - 24px / 2 - 0.36px);
 
   /* Body / 3 - Bolder */
 }
 
+a {
+  text-decoration: none;
+}
+
 .big_circle li span a {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
-  /* or 133% */
-
   display: flex;
   align-items: center;
 
@@ -155,6 +136,9 @@ ul.on_row li {
   padding-right: 8px;
 }
 
+ul.on_row {
+  padding: 15px 0;
+}
 
 ul.hug_content li::before {
   content: "\2022";
@@ -191,12 +175,9 @@ ul.hug_content {
   padding: 10px;
 }
 
-a {
-  text-decoration: none;
-}
-
 a.see_projects {
   margin: 0 0;
+  color: blue;
 }
 
 .size {
@@ -206,6 +187,7 @@ a.see_projects {
 
 .height_inc {
   padding: 10px 0;
+  color: blue;
 }
 
 .about_header {
@@ -242,24 +224,20 @@ ul.big_circle {
 
 /* Categories */
 
-.category-header{
+.category-header {
   position: relative;
 }
 
-.arrow{
+.arrow {
   position: absolute;
   right: 12%;
   top: 18.5%;
   cursor: pointer;
-  /* Base / 300 - Tertiary */
   width: 20px;
   height: 25px;
 }
-.down-arrow{
-  
 
-}
-.right-arrow{
+.right-arrow {
   transform: rotate(270deg);
 }
 
@@ -268,16 +246,12 @@ ul.big_circle {
   padding: 1rem 2rem;
 }
 
-.bt-1{
-  border-bottom:  2px solid #DFE1E6;
+.bt-1 {
+  border-bottom: 2px solid #dfe1e6;
 }
 
-.contact{
-
-  
-  /* Primary/B400 */
-  
-  background: #6070FF url("images/contact-Shapes.png");
+.contact {
+  background: #6070ff url("images/contact-Shapes.png");
   background-size: 61%;
   background-repeat: no-repeat;
   background-position: 155px 26px;
@@ -285,116 +259,76 @@ ul.big_circle {
   padding: 5rem 1.5rem;
   margin-top: 3rem;
   position: relative;
+  max-width: 375px;
 }
-.contact_flex{
+
+.contact_flex {
   flex-direction: column;
   align-items: center;
 }
-.contact_header{
 
-  /* Header / 2 */
-
-  font-family: 'Poppins';
+.contact_header {
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  /* or 130% */
-
   display: flex;
   align-items: center;
   text-align: center;
-
-  /* Neutrals/N0 */
-
-  color: #FFFFFF;
+  color: #fff;
 }
 
-.contact_paragraph{
-
-
-  font-family: 'Poppins';
+.contact_paragraph {
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  /* or 140% */
-
   text-align: center;
-
-  /* Primary/B50 */
-
-  color: #EBEBFF;
+  color: #ebebff;
 }
-.contact_form{
+
+.contact_form {
   margin: 2rem 1rem;
 }
-.contact_input{
-  /* Mono/White */
 
-  background: #FFFFFF;
-  /* Base/100 */
-
-  border: 1px solid #CFD8DC;
+.contact_input {
+  background: #fff;
+  border: 1px solid #cfd8dc;
   border-radius: 8px;
   padding: 1rem 1rem 1rem 2rem;
   font-size: 17px;
   line-height: 20px;
-
 }
-.contact_textarea{
-  /* Mono/White */
+
+.contact_textarea {
   line-height: 24px;
-
-  background: #FFFFFF;
-  /* Base/100 */
-
-  border: 1px solid #CFD8DC;
+  background: #fff;
+  border: 1px solid #cfd8dc;
   border-radius: 8px;
   padding: 0.5rem;
   font-size: 15px;
 }
 
-.contact_submit{
-  /* Normal Button/Primary/Enabled */
-
-
-  /* Auto layout */
-
+.contact_submit {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 12px 16px;
   width: 140px;
   height: 48px;
-  /* Neutrals/N0 */
-
-  background: #FFFFFF;
+  background: #fff;
   border-radius: 8px;
-
-  /* Button /Normal */
-
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  /* identical to box height, or 141% */
-
-  display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
-
-  /* Primary/B400 */
-
-  color: #6070FF;
-
-
-  /* Inside auto layout */
-
+  color: #6070ff;
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 0px 0px;
 }
