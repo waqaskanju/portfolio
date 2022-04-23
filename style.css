@@ -509,7 +509,7 @@ header {
     width: calc(var(--width));
     height: calc(var(--height));
     transform: translate(-28rem, 23rem);
-    background-color: white;
+    background-color: rgb(219, 24, 24);
     border: 1px solid #cbcdff;
   }
 }
