@@ -1,47 +1,58 @@
-# Hello-Microverse
-This Repo is for creating a simple portoflio project
+# Portfolio Repo
+
+This Repo is for creating a simple portoflio project.
 
 ## Built With
 
 -HTML
 -CSS
-
-
-# Author
-Waqas Ahmad
-![](https://img.shields.io/badge/Microverse-blueviolet)
+-JavaScript
 
 # Project Name
 
-> Description the project. IT contain a simple helo message
+Simple Portfolio Project
 
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
 
+A text editor(preferably Visual Studio Code)
+
 ### Prerequisites
 
-Only need need browser
-
-### Setup
-
-Just download the files and run it in browser
+-Need a browser to run and download the repo
+- Git is recommended for downloding the repo.
 
 ### Install
 
-No need to install anything
+You can install git from the following site.
+  -  [Git](https://git-scm.com/downloads)
 
 ### Usage
+
+#### Clone this repository
+
+```bash
+$ https://github.com/waqaskanju/Portfolio.git
+
+$ cd Portfolio
 
 No restraction  on usage.
 
 ### Run tests
 
-The availabe tests are for JSLint. CSLint
+There is a test file (linters.yml) for this project inside the .github/workflows folder.
+
+It executes three types of tests inside github actions.
+
+-lighthouse
+-webhint
+-stylint
 
 ### Deployment
 
-You can Add it to your local repo
+It can run on any browser. 
+Recommended screen size 735*780
 
 ## Authors
 
@@ -50,6 +61,12 @@ You can Add it to your local repo
 - GitHub: [@githubhandle](https://github.com/waqas)
 - Twitter: [@twitterhandle](https://twitter.com/waqas)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/waqas)
+
+👤 **Author2**
+
+- GitHub: [@githubhandle](https://github.com/Darik)
+- Twitter: [@twitterhandle](https://twitter.com/Darik)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/Darik)
 
 ## 🤝 Contributing
 
@@ -63,8 +80,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- We are taking files from Microverse. Thanks for there work
-
+- We are taking files from Microverse. Thanks for there work.
 
 ## 📝 License
 

@@ -1,3 +1,4 @@
 {
-    "stylint.enable": false
+  "stylint.enable": false,
+  "liveServer.settings.port": 5501
 }
