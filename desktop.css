@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,600&display=swap");
 
 /* Variables */
 
 :root {
-  --default-font: 'Poppins';
+  --default-font: "Poppins";
 }
 
 /* Re-setter */
@@ -186,7 +186,7 @@ ul.hug_content li {
 }
 
 .big_circle li span a {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -471,7 +471,7 @@ section {
 }
 
 .contact_header {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -483,7 +483,7 @@ section {
 }
 
 .contact_paragraph {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -536,7 +536,7 @@ section {
   height: 48px;
   background: #fff;
   border-radius: 8px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -558,3 +558,20 @@ section {
 }
 
 /* Media Queries */
+
+/* animation  */
+
+.top_nav_ul li:hover {
+  animation: navChange 0.5s infinite;
+}
+
+@keyframes navChange {
+  0% {
+    font-weight: bold;
+    background-color: wheat;
+  }
+  100% {
+    font-weight: bold;
+    background-color: wheat;
+  }
+}
