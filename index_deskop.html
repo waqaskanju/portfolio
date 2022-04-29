@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="desktop.css"/>
+    <link rel="stylesheet" href="handheld.css">
     <title>Desktop Version</title>
   </head>
   <body>
@@ -71,7 +72,11 @@
         <h6 class="not_show">First Section</h6>
         <div class="flexbox-project-container">
           <div class="flexbox-project-item flexbox-project-item-1">
-            <img src="images/desktop_p1.png" alt="" />
+            <picture>
+              <source media="(max-width:375px)" srcset="images/handheld/Tonic.png">
+              <source srcset="images/desktop/Tonic.png" media="(max-width: 678px)" >
+              <img src="images/desktop/Tonic.png" alt="none">
+              </picture>
           </div>
           <div class="flexbox-project-item flexbox-project-item-2">
             <h3 class="project_name">Tonic</h3>
@@ -101,7 +106,11 @@
         <h6 class="not_show">Second Section</h6>
         <div class="flexbox-project-container-r">
           <div class="flexbox-project-item flexbox-project-item-1">
-            <img src="images/desktop_p2.png" alt="" />
+            <picture>
+              <source media="(max-width:375px)" srcset="images/handheld/Multi-Post.png">
+              <source srcset="images/desktop/Multi-Post.png" media="(max-width: 678px)" >
+              <img src="images/desktop/Multi-Post.png" alt="none">
+              </picture>
           </div>
           <div class="flexbox-project-item flexbox-project-item-2">
             <h3 class="project_name">Multi-Post Stories</h3>
@@ -132,10 +141,15 @@
         <h6 class="not_show">Third Section</h6>
         <div class="flexbox-project-container">
           <div class="flexbox-project-item flexbox-project-item-1">
-            <img src="images/desktop_p3.png" alt="" />
+            <picture>
+              <source media="(max-width:375px)" srcset="images/handheld/Facebook_360.png">
+              <source srcset="images/desktop/Facebook_360.png" media="(max-width: 678px)" >
+              <img src="images/desktop/Facebook_360.png" alt="none">
+              </picture>
           </div>
           <div class="flexbox-project-item flexbox-project-item-2">
             <h3 class="project_name">Facebook 360</h3>
+            <span class="conopy">CANPOY</span>
             <ul class="hug_content">
               <li>Full Stack Dev</li>
               <li>2015</li>
@@ -160,7 +174,11 @@
         <h6 class="not_show">Forth Section</h6>
         <div class="flexbox-project-container-r">
           <div class="flexbox-project-item flexbox-project-item-1">
-            <img src="images/desktop_p4.png" alt="" />
+            <picture>
+              <source media="(max-width:375px)" srcset="images/handheld/User_Navigation.png">
+              <source srcset="images/desktop/User_Navigation.png" media="(max-width: 678px)">
+              <img src="images/desktop/User_Navigation.png" alt="none">
+            </picture>
           </div>
           <div class="flexbox-project-item flexbox-project-item-2">
             <h3 class="project_name">Multi-Post Stories</h3>
