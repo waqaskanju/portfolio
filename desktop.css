@@ -166,10 +166,11 @@ ul.hug_content li {
   margin-left: 10px;
   display: inline;
   list-style-type: circle;
-  padding-left: 32px;
+  padding-left: 20px;
 }
 
 .flexbox-project-item {
+  margin: 10px;
   width: 300px;
 }
 
@@ -245,12 +246,17 @@ main ul.on_row {
   padding: 0 0;
 }
 
+.flexbox-project-item > * + * {
+  margin-top: 1rem;
+}
+
 .project_name {
   font-family: var(--default-font);
   font-size: 40px;
   font-weight: 700, bold;
   line-height: 44px;
   color: #172b4d;
+  margin-bottom: 1rem;
 }
 
 .conopy {
@@ -346,9 +352,11 @@ section {
 /* About Myself Section */
 
 .grid-container-about {
+  padding: 5rem 2rem;
   display: grid;
   background-color: #fff;
   grid-template-columns: 1fr 1fr;
+  border-top-right-radius: 20%;
 }
 
 .grid-item {
@@ -360,9 +368,13 @@ section {
   font-family: var(--default-font);
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 18px;
   color: #344563;
+}
+
+.about_header {
+  font-size: 25px;
 }
 
 .height_inc {
