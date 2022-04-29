@@ -14,6 +14,28 @@
   box-sizing: border-box;
 }
 
+.p-1-nav {
+  padding: 0 4em;
+}
+
+.logo {
+  padding: 20px 10px 1px;
+  flex-grow: 2;
+  font-family: Poppins, Arial, Verdana, Tahoma, sans-serif;
+  font-weight: 700;
+  line-height: 20px;
+  color: #6070ff;
+  align-self: center;
+}
+
+nav .logo {
+  color: #6070ff;
+  text-decoration-color: var(--main-clr);
+  font-size: 22px;
+  font-family: Poppins, Arial, Verdana, Tahoma, sans-serif;
+  font-weight: 800;
+}
+
 .background {
   background-image: url(images/desktop_start.png);
   background-repeat: no-repeat;
@@ -37,24 +59,6 @@ nav {
   display: flex;
   align-items: end;
   background-color: #fff;
-}
-
-.logo {
-  padding: 20px 10px 1px;
-  flex-grow: 2;
-  font-family: Poppins, Arial, Verdana, Tahoma, sans-serif;
-  font-weight: 700;
-  line-height: 20px;
-  color: #6070ff;
-  align-self: center;
-}
-
-nav .logo {
-  color: #6070ff;
-  text-decoration-color: var(--main-clr);
-  font-size: 22px;
-  font-family: Poppins, Arial, Verdana, Tahoma, sans-serif;
-  font-weight: 800;
 }
 
 nav ul li {
@@ -155,15 +159,6 @@ main p {
   top: 9px;
 }
 
-/* .big_circle li span {
-  position: absolute;
-  height: 24px;
-  left: 76px;
-  right: 12px;
-  top: calc(50% - 24px / 2 - 0.36px);
-
-} */
-
 .big_circle li span a {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -227,7 +222,7 @@ main ul.on_row {
 }
 
 .flexbox-project-item-2 {
-  padding: 0 20px;
+  padding: 0 6px;
 }
 
 .project_name {
