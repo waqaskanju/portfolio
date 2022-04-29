@@ -3,23 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="desktop.css" screen="media"/>
-  
-    
+    <link rel="stylesheet" href="desktop.css"/>
     <title>Desktop Version</title>
   </head>
   <body>
     <div class="background">
-      <nav class="flex-container flex-container-navigation">
-        <a class="flex-item flex-item-1 logo" href="">My Logo</a>
-        <ul class="flex-item flex-item-2">
-          <li>Portfolio</li>
-          <li>About</li>
-          <li>Contact</li>
+      <nav class=" flex-container-navigation">
+        <a class="flex-item flex-item-1 p-1-nav" href="#">My Logo</a>
+        <ul class="flex-item flex-item-2 top_nav_ul">
+          <li> <a href="#">Portfolio </a> </li>
+          <li> <a href="#">About </a> </li>
+          <li> <a href="#">Contact </a> </li>
         </ul>
+        <a href="javascript:void(0)" class="not_show_bars p-1-nav" onclick="myFunction()"><i class="fa fa-bars"></i></a>
       </nav>
-
+      <div class="content">
       <main>
         <h1>
           I’m Waqas <br />
@@ -62,6 +62,7 @@
           </ul>
         </div>
       </main>
+      </div>
     </div>
 
     <article>
@@ -309,6 +310,5 @@
           </div>
         </article>
       </footer>
-
   </body>
 </html>

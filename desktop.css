@@ -46,6 +46,7 @@ nav {
   font-weight: 700;
   line-height: 20px;
   color: #6070ff;
+  align-self: center;
 }
 
 nav .logo {
@@ -210,8 +211,9 @@ main ul.on_row {
 
 .flexbox-project-container {
   display: flex;
+  flex-direction: row;
   background-color: white;
-  min-width: 700px;
+  min-width: 375px;
   margin: 0 38px;
   padding: 10px 10px;
 }
@@ -219,7 +221,6 @@ main ul.on_row {
 .flexbox-project-container-r {
   display: flex;
   background-color: white;
-  min-width: 700px;
   margin: 0 38px;
   padding: 10px 10px;
   flex-direction: row-reverse;
@@ -310,6 +311,10 @@ a.see_projects {
 }
 
 .not_show {
+  display: none;
+}
+
+.not_show_bars {
   display: none;
 }
 
@@ -521,7 +526,73 @@ a.see_projects {
 /* Media Queries */
 
 @media screen and (max-width: 375px) {
+  body {
+    max-width: 375px;
+  }
+
+  .not_show_bars {
+    display: block;
+  }
+
   .background {
-    background-image: url(images/desktop_start.png);
-}
+    background-image: url(images/background_mobile5.png);
+    border-radius: 0 0 0 1em;
+    min-height: 38em;
+  }
+
+  /* Navigation */
+
+  .top_nav_ul {
+    display: none;
+  }
+
+  .top_nav_ul a {
+    text-decoration: none;
+    display: block;
+  }
+
+  .p-1-nav {
+    padding: 0 3em;
+  }
+
+  main {
+    margin-top: 7em;
+    padding: 0 1.5em;
+  }
+
+  .flexbox-project-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin: 0 0;
+  }
+
+  .flexbox-project-container-r {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 0 0;
+  }
+
+  .flexbox-project-item-1 {
+    padding: 0 20px;
+  }
+
+  .flexbox-project-item-1 img {
+    width: 100%;
+    height: 220px;
+  }
+
+  .flexbox-project-item-2 {
+    padding: 0 0;
+  }
+
+  p.hug_content_desc {
+    max-width: 365px;
+  }
+
+  /* About ME */
+  .grid-container-about {
+    grid-template-columns: 1fr;
+  }
 }
