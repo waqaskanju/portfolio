@@ -187,7 +187,7 @@ a.see_projects {
 
 .height_inc {
   padding: 10px 0;
-  color: blue;
+  color: #7f8cff;
 }
 
 .about_header {
@@ -244,6 +244,14 @@ ul.big_circle {
 /* Utilities */
 .p-1 {
   padding: 1rem 2rem;
+}
+
+.p-2 {
+  padding: 2rem 4rem;
+}
+
+.p-3 {
+  padding: 4rem 6rem;
 }
 
 .bt-1 {
