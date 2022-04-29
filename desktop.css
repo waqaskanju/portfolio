@@ -352,11 +352,12 @@ section {
 /* About Myself Section */
 
 .grid-container-about {
-  padding: 6rem;
+  padding: 6rem 6rem 10rem 6rem;
   display: grid;
   background-color: #fff;
   grid-template-columns: 1fr 1fr;
   border-top-right-radius: 20%;
+  height: 800px;
 }
 
 .grid-item {
@@ -457,7 +458,7 @@ section {
   border-top-left-radius: 15%;
   padding: 5rem 1.5rem;
   position: relative;
-  transform: translateY(-50px);
+  transform: translateY(-200px);
 }
 
 .flex-contact > * {
