@@ -20,7 +20,7 @@ Simple Portfolio Project
 
 To get a local copy up and running follow these simple example steps.
 
-A text editor(preferably Visual Studio Code)
+-A text editor(preferably Visual Studio Code)
 
 ### Prerequisites
 
@@ -58,19 +58,13 @@ It executes three types of tests inside github actions.
 It can run on any browser. 
 Recommended screen size 735*780
 
-## Authors
+## Author
 
-👤 **Author1**
+👤 **Author**
 
 - GitHub: [@githubhandle](https://github.com/waqas)
 - Twitter: [@twitterhandle](https://twitter.com/waqas)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/waqas)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/Darik)
-- Twitter: [@twitterhandle](https://twitter.com/Darik)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/Darik)
 
 ## 🤝 Contributing
 
