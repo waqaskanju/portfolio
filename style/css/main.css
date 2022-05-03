@@ -474,6 +474,14 @@ ul.hug_content {
   color: #051eff;
 }
 
+.contrast_color {
+  color: #0f27ff;
+}
+
+.not {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .container {
     width: 80%;
