@@ -470,7 +470,7 @@ ul.hug_content {
   display: block;
 }
 
-.logo {
+#logo {
   color: #051eff;
 }
 
@@ -478,7 +478,7 @@ ul.hug_content {
   color: #0f27ff;
 }
 
-.not {
+#not {
   display: none;
 }
 
