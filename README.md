@@ -60,7 +60,7 @@ Recommended screen size 735*780
 
 ## Author
 
-👤 **Author**
+👤 **Waqas Ahmad**
 
 - GitHub: [@githubhandle](https://github.com/waqas)
 - Twitter: [@twitterhandle](https://twitter.com/waqas)
