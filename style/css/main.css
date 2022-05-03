@@ -483,6 +483,10 @@ ul.hug_content {
 }
 
 @media screen and (min-width: 768px) {
+  #logo {
+    color: #00f;
+  }
+
   .container {
     width: 80%;
   }
