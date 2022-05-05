@@ -33,15 +33,16 @@ You can install git from the following site.
   -  [Git](https://git-scm.com/downloads)
 
 ### Usage
-
+Free to use for your portfolio 
 #### Clone this repository
 
 ```bash
-$ https://github.com/waqaskanju/Portfolio.git
+$ git clone https://github.com/waqaskanju/Portfolio.git
 
 $ cd Portfolio
 
-No restraction  on usage.
+```
+#### No restraction  on usage.
 
 ### Run tests
 
@@ -49,9 +50,9 @@ There is a test file (linters.yml) for this project inside the .github/workflows
 
 It executes three types of tests inside github actions.
 
--lighthouse
--webhint
--stylint
+1.lighthouse
+1.webhint
+1.stylint
 
 ### Deployment
 
@@ -64,7 +65,7 @@ Recommended screen size 735*780
 
 - GitHub: [@githubhandle](https://github.com/waqas)
 - Twitter: [@twitterhandle](https://twitter.com/waqas)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/waqas)
+- LinkedIn: [@LinkedIn](https://linkedin.com/in/waqas)
 
 ## 🤝 Contributing
 
