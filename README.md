@@ -14,7 +14,7 @@ Simple Portfolio Project
 
 # Live Demo
 
-(https://waqaskanju.github.io/portfolio/)
+(https://waqaskanju.github.io/Portfolio/)
 
 ## Getting Started
 
@@ -37,7 +37,7 @@ Free to use for your portfolio
 #### Clone this repository
 
 ```bash
-$ git clone https://github.com/waqaskanju/portfolio.git
+$ git clone https://github.com/waqaskanju/Portfolio.git
 
 $ cd Portfolio
 
