@@ -1,11 +1,15 @@
+function openNavigation() {
+  var links = document.getElementById("mylinks");
+  var bar = document.getElementById("bar")
+  if (links.style.display === "flex") {
+    links.style.display = "none";
+    bar.classList.remove("fa-times");
+    bar.classList.add("fa-bars");
 
-const navigation = document.getElementById("nav");
-const menu = document.getElementById("menu");
-
-menu.addEventListener("click", () => {
-    console.log('clicked')
-  navigation.style.setProperty("--childenNumber", navigation.children.length);
-
-  navigation.classList.toggle("active");
-  menu.classList.toggle("active");
-});
+  } else {
+    links.style.display = "flex";
+    links.style.flexDirection="column"
+    bar.classList.remove("fa-bars");
+    bar.classList.add("fa-times");
+  }
+}

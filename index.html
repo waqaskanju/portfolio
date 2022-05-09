@@ -19,11 +19,11 @@
     <nav>
       <div class="container">
         <div>My Logo</div>
-        <div class="bars"><i class="fa-solid fa-bars"></i></div>
-        <ul class="navigation_list"> 
-          <li> <a href="#">Portfolio </a></li>
-          <li><a href="#">About </a></li>
-          <li><a href="#">Contact </a></li>
+        <div class="bars"> <span onclick="openNavigation()" ><i id="bar" class="fa-solid fa-bars"></i></span></div>
+        <ul id="mylinks" class="navigation_list"> 
+          <li> <a href="#portfolio" onclick="openNavigation()" >Portfolio </a></li>
+          <li><a href="#about"  onclick="openNavigation()" >About </a></li>
+          <li><a href="#contact"  onclick="openNavigation()" >Contact </a></li>
         </ul>
       </div>
     </nav>
@@ -66,7 +66,7 @@
     </header>
     <!-- First Section -->
     <h2 id="not"> WorK Section </h2>
-    <section class="work">
+    <section class="work" id="portfolio">
       <div class="work_picture--container">
         <picture>
           <source
@@ -206,7 +206,7 @@
 
     <!-- About Section -->
     <div class="about__container">
-      <section class="about">
+      <section class="about" id="about">
         <div class="about__description">
           <h2>About Myself</h2>
           <p>
@@ -292,7 +292,7 @@
     </div>
 
     <div class="footer-wrap">
-      <footer>
+      <footer id="contact">
         <div class="footer-container">
           <h2 class="footer__header">Contact Me</h2>
           <p class="footer__description">
@@ -343,5 +343,6 @@
         </div>
       </footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

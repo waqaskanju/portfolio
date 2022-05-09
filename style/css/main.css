@@ -69,6 +69,14 @@ section {
   display: none;
 }
 
+.navigation_list a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
 .header-3 {
   font-size: var(--font-medium-h3-2);
 }
