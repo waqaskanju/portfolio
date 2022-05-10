@@ -1,11 +1,27 @@
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+  document.getElementById("mylist").style.display="block";
+  document.getElementById("open_btn").innerText="";
+  document.getElementById("close_btn").innerHTML="&times;";
+}
 
-const navigation = document.getElementById("nav");
-const menu = document.getElementById("menu");
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+    document.getElementById("open_btn").innerHTML="&#9776;";
+    document.getElementById("close_btn").innerHTML="";
+    if( Math.max(window.innerWidth < 768)){
+      document.getElementById("mylist").style.display="none";
+      document.getElementById("close_btn").innerText="";
+    } else{
+     /*  document.getElementById("close_btn").innerHTML="&times;"; */
+    }
+  }
 
-menu.addEventListener("click", () => {
-    console.log('clicked')
-  navigation.style.setProperty("--childenNumber", navigation.children.length);
+function close_overlay(){
+  if( Math.max(window.innerWidth > 768)){
+    closeNav();
+  }
+}
 
-  navigation.classList.toggle("active");
-  menu.classList.toggle("active");
-});
+
+  

@@ -12,19 +12,26 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
-    <link rel="stylesheet" href="style/css/main.css" />
+    <link rel="stylesheet" href="./style/css/main.css" />
     <title>Portfolio Waqas Ahmad</title>
   </head>
-  <body>
+  <body onresize="close_overlay()">
     <nav>
       <div class="container">
         <div>My Logo</div>
-        <div class="bars"><i class="fa-solid fa-bars"></i></div>
-        <ul class="navigation_list"> 
-          <li> <a href="#">Portfolio </a></li>
-          <li><a href="#">About </a></li>
-          <li><a href="#">Contact </a></li>
+        <div class="bars"> <span onclick="openNav()" id="open_btn">&#9776;</span></div>
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" id="close_btn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+        
+       <!--  <ul id="mylinks" class="navigation_list">  -->
+         <ul id="mylist">
+          <li> <a href="#portfolio" onclick="closeNav()" >Portfolio </a></li>
+          <li><a href="#about"  onclick="closeNav()" >About </a></li>
+          <li><a href="#contact"  onclick="closeNav()" >Contact </a></li>
         </ul>
+        </div>
+        </div>
       </div>
     </nav>
     <header>
@@ -50,7 +57,7 @@
             <li>
               <img
                 class="medium"
-                src="style/pictures/medium.png"
+                src="./style/pictures/medium.png"
                 alt="medium"
               />
             </li>
@@ -66,14 +73,14 @@
     </header>
     <!-- First Section -->
     <h2 id="not"> WorK Section </h2>
-    <section class="work">
+    <section class="work" id="portfolio">
       <div class="work_picture--container">
         <picture>
           <source
             srcset="style/pictures/desktop/Tonic.png"
             media="(min-width: 785px)"
           />
-          <img src="style/pictures/handheld/Tonic.png" alt="Tonic" />
+          <img src="./style/pictures/handheld/Tonic.png" alt="Tonic" />
         </picture>
       </div>
       <div class="work__content">
@@ -106,7 +113,7 @@
             srcset="style/pictures/desktop/Multi-Post.png"
             media="(min-width: 785px)"
           />
-          <img src="style/pictures/handheld/Multi-Post.png" alt="Multi-Post" />
+          <img src="./style/pictures/handheld/Multi-Post.png" alt="Multi-Post" />
         </picture>
       </div>
       <div class="work__content">
@@ -140,7 +147,7 @@
             media="(min-width: 785px)"
           />
           <img
-            src="style/pictures/handheld/Facebook_360.png"
+            src="./style/pictures/handheld/Facebook_360.png"
             alt="Facebook_360"
           />
         </picture>
@@ -176,7 +183,7 @@
             media="(min-width: 785px)"
           />
           <img
-            src="style/pictures/handheld/User_Navigation.png"
+            src="./style/pictures/handheld/User_Navigation.png"
             alt="User_Navigation"
           />
         </picture>
@@ -206,7 +213,7 @@
 
     <!-- About Section -->
     <div class="about__container">
-      <section class="about">
+      <section class="about" id="about">
         <div class="about__description">
           <h2>About Myself</h2>
           <p>
@@ -235,7 +242,7 @@
               <li>
                 <img
                   class="medium"
-                  src="style/pictures/medium.png"
+                  src="./style/pictures/medium.png"
                   alt="medium"
                 />
               </li>
@@ -249,7 +256,7 @@
           <div class="about__skills__skill">
             <h3 class="header-3">Languages</h3>
             <img
-              src="style/pictures/down.png"
+              src="./style/pictures/down.png"
               class="arrow down-arrow"
               alt="down-arrow"
             />
@@ -257,16 +264,16 @@
           <div class="about__skills__languages">
             <ul>
               <li>
-                <img src="style/pictures/js.png" alt="JavaScript" />
+                <img src="./style/pictures/js.png" alt="JavaScript" />
                 <span><a href="#"> JavaScript</a></span>
               </li>
               <li>
-                <img src="style/pictures/html.png" alt="HTML" /><span>
+                <img src="./style/pictures/html.png" alt="HTML" /><span>
                   <a href="#"> HTML</a></span
                 >
               </li>
               <li>
-                <img src="style/pictures/css.png" alt="CSS" />
+                <img src="./style/pictures/css.png" alt="CSS" />
                 <span><a href="#"> CSS</a></span>
               </li>
             </ul>
@@ -282,7 +289,7 @@
           <div class="about__skills__skill line-below">
             <h3 class="header-3">Skills</h3>
             <img
-              src="style/pictures/down.png"
+              src="./style/pictures/down.png"
               class="arrow right-arrow"
               alt="down-arrow"
             />
@@ -292,7 +299,7 @@
     </div>
 
     <div class="footer-wrap">
-      <footer>
+      <footer id="contact">
         <div class="footer-container">
           <h2 class="footer__header">Contact Me</h2>
           <p class="footer__description">
@@ -343,5 +350,6 @@
         </div>
       </footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
