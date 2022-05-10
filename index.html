@@ -19,12 +19,19 @@
     <nav>
       <div class="container">
         <div>My Logo</div>
-        <div class="bars"> <span onclick="openNavigation()" ><i id="bar" class="fa-solid fa-bars"></i></span></div>
-        <ul id="mylinks" class="navigation_list"> 
-          <li> <a href="#portfolio" onclick="openNavigation()" >Portfolio </a></li>
-          <li><a href="#about"  onclick="openNavigation()" >About </a></li>
-          <li><a href="#contact"  onclick="openNavigation()" >Contact </a></li>
+        <div class="bars"> <span onclick="openNav()">&#9776;</span></div>
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+        
+       <!--  <ul id="mylinks" class="navigation_list">  -->
+         <ul id="mylist">
+          <li> <a href="#portfolio" onclick="closeNav()" >Portfolio </a></li>
+          <li><a href="#about"  onclick="closeNav()" >About </a></li>
+          <li><a href="#contact"  onclick="closeNav()" >Contact </a></li>
         </ul>
+        </div>
+        </div>
       </div>
     </nav>
     <header>

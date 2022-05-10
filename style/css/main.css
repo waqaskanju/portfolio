@@ -15,6 +15,7 @@
   --clr-neutrals-800: #172b4d;
   --clr-neutrals-900: #000;
   --clr-border: #dfe1e6;
+  --clr-menu-back: #6070ff;
 
   /* Line Heights */
 
@@ -55,6 +56,22 @@ body {
   background-color: var(--clr-neutrals-300);
 }
 
+/* top menu start */
+
+.bars {
+  position: absolute;
+  top: 2%;
+  right: 5%;
+}
+
+#mylist {
+  display: none;
+}
+
+.navigation_list a {
+  text-decoration: none;
+}
+
 img {
   display: block;
 }
@@ -67,10 +84,6 @@ section {
 
 .navigation_list {
   display: none;
-}
-
-.navigation_list a {
-  text-decoration: none;
 }
 
 ul {
@@ -126,6 +139,7 @@ h3 {
 }
 
 /* Transfer */
+
 .work > *,
 .work img,
 .work picture,
@@ -265,6 +279,15 @@ header h1,
 .project__languages {
   list-style-type: none;
   display: flex;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
 }
 
 .project__languages li a {
@@ -482,6 +505,49 @@ ul.hug_content {
   display: none;
 }
 
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--clr-menu-back);
+  background-color: rgba(38, 44, 100, 0.9);
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 15%;
+  left: 10%;
+  width: 100%;
+  text-align: left;
+  margin-top: 30px;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a { font-size: 20px; }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   #logo {
     color: #00f;
@@ -489,6 +555,37 @@ ul.hug_content {
 
   .container {
     width: 80%;
+  }
+
+  #mylist {
+    position: absolute;
+    display: flex;
+    top: 0%;
+    right: 0%;
+  }
+
+  ul#mylist {
+    position: absolute;
+    top: -30px;
+  }
+
+  .overlay {
+    position: static;
+  }
+
+  .navigation_list a {
+    text-decoration: none;
+    color: var(--clr-neutrals-600);
+    font-weight: var(--font-bold-500);
+  }
+
+  #mylist a {
+    color: black;
+    font-size: 15px;
+    padding: 0 16px 0;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
   }
 
   .bars {
@@ -500,12 +597,6 @@ ul.hug_content {
     list-style-type: none;
     width: 35%;
     justify-content: space-between;
-  }
-
-  .navigation_list a {
-    text-decoration: none;
-    color: var(--clr-neutrals-600);
-    font-weight: var(--font-bold-500);
   }
 
   header {
