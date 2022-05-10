@@ -512,7 +512,6 @@ ul.hug_content {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: var(--clr-menu-back);
   background-color: rgba(38, 44, 100, 0.9);
   transition: 0.5s;
 }

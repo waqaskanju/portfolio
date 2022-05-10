@@ -1,4 +1,4 @@
-function openNavigation() {
+/* function openNavigation() {
  const links = document.getElementById("mylinks");
  const bar = document.getElementById("bar")
   if (links.style.display === "flex") {
@@ -12,7 +12,7 @@ function openNavigation() {
     bar.classList.remove("fa-bars");
     bar.classList.add("fa-times");
   }
-}
+} */
 
 function openNav() {
   document.getElementById("myNav").style.width = "100%";
