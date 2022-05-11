@@ -552,7 +552,7 @@ ul.hug_content {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
-  z-index: 1; /* Specify a stack order in case you're using a different order for other elements */
+  z-index: 3; /* Specify a stack order in case you're using a different order for other elements */
 
   /* cursor: pointer;   Add a pointer on hover */
 
@@ -653,6 +653,23 @@ ul.hug_content {
     gap: 25px;
   }
 
+  #portfolio_popup {
+    display: block;
+  }
+
+  #portfolio_popup .work__content {
+    display: flex;
+  }
+
+  #portfolio_popup .project__description {
+    width: 65%;
+    margin-right: 20px;
+  }
+
+  .m-t-1 {
+    margin-top: 1.5rem;
+  }
+
   .about {
     display: flex;
   }
@@ -666,6 +683,10 @@ ul.hug_content {
   }
 
   .work img {
+    width: 100%;
+  }
+
+  .work_popup img {
     width: 100%;
   }
 
