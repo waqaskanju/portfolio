@@ -543,8 +543,8 @@ ul.hug_content {
 }
 
 #overlay-popup {
-  position: fixed; /* Sit on top of the page content */
-  display: block; /* Hidden by default */
+  position: fixed;
+  display: none;
   width: 100%; /* Full width (cover the whole page) */
   height: 100%; /* Full height (cover the whole page) */
   top: 0;
@@ -553,9 +553,7 @@ ul.hug_content {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
   z-index: 3; /* Specify a stack order in case you're using a different order for other elements */
-
-  /* cursor: pointer;   Add a pointer on hover */
-
+  cursor: pointer;
   overflow-y: scroll;
 }
 
@@ -573,6 +571,10 @@ ul.hug_content {
 
 #overlay-content-popup b {
   margin-left: 1rem;
+}
+
+.popup_extra_languages {
+  display: none;
 }
 
 @media screen and (max-height: 450px) {
@@ -666,8 +668,16 @@ ul.hug_content {
     margin-right: 20px;
   }
 
+  #overlay-content-popup b {
+    margin-left: 2.3rem;
+  }
+
   .m-t-1 {
     margin-top: 1.5rem;
+  }
+
+  .popup_extra_languages {
+    display: inline;
   }
 
   .about {

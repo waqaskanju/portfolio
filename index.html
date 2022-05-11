@@ -103,23 +103,23 @@
           <li class="languages"><a href="#">css </a></li>
           <li class="languages"><a href="#">javaScript </a></li>
         </ul>
-        <a href="javascript:void(0)" class="project__link" onclick="open_popup()"> See Project A</a>
+        <a href="javascript:void(0)"  name="project_1" class="project__link" onclick="open_popup(this.name)"> See Project</a>
       </div>
     </section>
-    <!-- Pop up Implementation Started -->
+    <!-- Pop up section Implementation Started -->
     <div id="overlay-popup">
       <div id="overlay-content-popup">
         <section class="work" id="portfolio_popup">
           <div class="popup-header">
-            <h3 class="project__name">Tonic</h3>
+            <h3 class="project__name" id="popup_title">Tonic</h3>
             <a href="javascript:void(0)" onclick="close_popup()">&times;</a>
           </div>
             
           <span class="project__role__container"> </span>
-          <b class="project__conopy_popup">CONOPY</b>
+          <b class="project__conopy_popup" id="popup_sub_title">CONOPY</b>
           <ul class="project__role hug_content">
-            <li>Back End Dev</li>
-            <li>2015</li>
+            <li id="popup_role">Back End Dev</li>
+            <li id="popup_year">2015</li>
           </ul>
           <div class="work_picture--container">
             <picture>
@@ -127,13 +127,13 @@
                 srcset="style/pictures/desktop/Tonic.png"
                 media="(min-width: 785px)"
               />
-              <img src="./style/pictures/handheld/Tonic.png" alt="Tonic" />
+              <img src="./style/pictures/handheld/Tonic.png" id="popup_image" alt="Tonic" />
             </picture>
           </div>
           <div class="work__content">
             
             <!-- Span closing changed -->
-            <p class="project__description">
+            <p class="project__description" id="popup_description">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 
               the industry's standard dummy text ever since the 1500s, when an unknown printer took a 
               galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, 
@@ -144,6 +144,9 @@
               <li class="languages"><a href="#">html </a></li>
               <li class="languages"><a href="#">css </a></li>
               <li class="languages"><a href="#">javaScript </a></li>
+              <li class="languages popup_extra_languages"><a href="#">github </a></li>
+              <li class="languages popup_extra_languages"><a href="#">ruby </a></li>
+              <li class="languages popup_extra_languages"><a href="#">bootstraps </a></li>
             </ul>
             
               <div class="m-t-1">
@@ -189,7 +192,8 @@
           <li class="languages"><a href="#">css </a></li>
           <li class="languages"><a href="#">javaScript </a></li>
         </ul>
-        <a href="#" class="project__link"> See Project </a>
+        <!-- <a href="#" class="project__link"> See Project </a> -->
+        <a href="javascript:void(0)"  name="project_2" class="project__link" onclick="open_popup(this.name)"> See Project B</a>
       </div>
     </section>
     <!-- Third Section -->
@@ -225,7 +229,8 @@
           <li class="languages"><a href="#">css </a></li>
           <li class="languages"><a href="#">javaScript </a></li>
         </ul>
-        <a href="#" class="project__link"> See Project </a>
+        <!-- <a href="#" class="project__link"> See Project </a> -->
+        <a href="javascript:void(0)"  name="project_3" class="project__link" onclick="open_popup(this.name)"> See Project</a>
       </div>
     </section>
     <!-- Fourth Section -->
@@ -261,7 +266,8 @@
           <li class="languages"><a href="#">CSS </a></li>
           <li class="languages"><a href="#">JavaScript </a></li>
         </ul>
-        <a href="#" class="project__link"> See Project </a>
+        <!-- <a href="#" class="project__link"> See Project </a> -->
+        <a href="javascript:void(0)"  name="project_4" class="project__link" onclick="open_popup(this.name)"> See Project B</a>
       </div>
     </section>
 
