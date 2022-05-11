@@ -509,7 +509,7 @@ ul.hug_content {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   left: 0;
   background-color: rgba(38, 44, 100, 0.9);
@@ -536,6 +536,45 @@ ul.hug_content {
   right: 45px;
   font-size: 60px;
 }
+
+#overlay-popup{
+  position: fixed; /* Sit on top of the page content */
+  display:block; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+   top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; 
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 1; /* Specify a stack order in case you're using a different order for other elements */
+  /* cursor: pointer;  *//* Add a pointer on hover */
+  overflow-y: scroll;
+}
+
+#overlay-content-popup {
+  position: absolute;
+  top: 0%;
+  left: 10%;
+ 
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -1rem;
+}
+
+.popup-header a {
+ text-decoration: none;
+ font-size: 29px;
+
+}
+
+#overlay-content-popup b {
+  margin-left:1rem;
+}
+
 
 @media screen and (max-height: 450px) {
   .overlay a { font-size: 20px; }

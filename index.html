@@ -12,6 +12,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style/css/main.css" />
     <title>Portfolio Waqas Ahmad</title>
   </head>
@@ -102,9 +103,58 @@
           <li class="languages"><a href="#">css </a></li>
           <li class="languages"><a href="#">javaScript </a></li>
         </ul>
-        <a href="#" class="project__link"> See Project </a>
+        <a href="javascript:void(0)" class="project__link" onclick="open_popup()"> See Project A</a>
       </div>
     </section>
+    <!-- Pop up Implementation Started -->
+    <div id="overlay-popup">
+      <div id="overlay-content-popup">
+        <section class="work" id="portfolio">
+          <div class="popup-header">
+            <h3 class="project__name">Tonic</h3>
+            <a href="javascript:void(0)" onclick="close_popup()">&times;</a>
+          </div>
+            
+          <span class="project__role__container"> </span>
+          <b class="project__conopy_popup">CONOPY</b>
+          <ul class="project__role hug_content">
+            <li>Back End Dev</li>
+            <li>2015</li>
+          </ul>
+          <div class="work_picture--container">
+            <picture>
+              <source
+                srcset="style/pictures/desktop/Tonic.png"
+                media="(min-width: 785px)"
+              />
+              <img src="./style/pictures/handheld/Tonic.png" alt="Tonic" />
+            </picture>
+          </div>
+          <div class="work__content">
+            
+            <!-- Span closing changed -->
+            <p class="project__description">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 
+              the industry's standard dummy text ever since the 1500s, when an unknown printer took a 
+              galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, 
+              but also the leap into electronic typesetting, remaining essent
+            </p>
+    
+            <ul class="project__languages">
+              <li class="languages"><a href="#">html </a></li>
+              <li class="languages"><a href="#">css </a></li>
+              <li class="languages"><a href="#">javaScript </a></li>
+            </ul>
+            <a href="javascript:void(0)" class="project__link" onclick="open_popup()"> See Live <i class="fa fa-circle-o-notch"></i></a>
+            <a href="javascript:void(0)" class="project__link" onclick="open_popup()"> See Source  <i class="fa-brands fa-github"></i></a>
+          </div>
+        </section>
+      </div>
+    
+      
+    </div>
+    <!-- Pop up Implementation Ended -->
+
     <!-- 2nd Section -->
     <section class="work reverse">
       <div class="work_picture--container">

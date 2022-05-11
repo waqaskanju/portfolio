@@ -23,5 +23,11 @@ function close_overlay(){
   }
 }
 
+function open_popup() {
+  document.getElementById("overlay-popup").style.display = "block";
+}
 
+function close_popup() {
+  document.getElementById("overlay-popup").style.display = "none";
+}
   
