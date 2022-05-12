@@ -12,6 +12,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style/css/main.css" />
     <title>Portfolio Waqas Ahmad</title>
   </head>
@@ -23,8 +24,8 @@
         <div id="myNav" class="overlay">
           <a href="javascript:void(0)" class="closebtn" id="close_btn" onclick="closeNav()">&times;</a>
           <div class="overlay-content">
-        
-       <!--  <ul id="mylinks" class="navigation_list">  -->
+            
+            <!--  <ul id="mylinks" class="navigation_list">  -->
          <ul id="mylist">
           <li> <a href="#portfolio" onclick="closeNav()" >Portfolio </a></li>
           <li><a href="#about"  onclick="closeNav()" >About </a></li>
@@ -102,9 +103,26 @@
           <li class="languages"><a href="#">css </a></li>
           <li class="languages"><a href="#">javaScript </a></li>
         </ul>
-        <a href="#" class="project__link"> See Project </a>
+        <a href="javascript:void(0)"  id="project_1" class="project__link" onclick="open_popup(this.id)"> See Project</a>
       </div>
     </section>
+
+    <!-- Pop up section Implementation Started -->
+
+    <div id="overlay-popup">
+
+      <!-- Code Below Here will Be Generated Dynamically By JS  -->
+      
+      <div id="overlay-content-popup">
+
+      </div>
+    
+      <!-- Code Above Here will be Dynamically Generated -->
+
+    </div>
+    
+    <!-- Pop up Implementation Ended -->
+
     <!-- 2nd Section -->
     <section class="work reverse">
       <div class="work_picture--container">
@@ -135,7 +153,8 @@
           <li class="languages"><a href="#">css </a></li>
           <li class="languages"><a href="#">javaScript </a></li>
         </ul>
-        <a href="#" class="project__link"> See Project </a>
+        <!-- <a href="#" class="project__link"> See Project </a> -->
+        <a href="javascript:void(0)"  id="project_2" class="project__link" onclick="open_popup(this.id)"> See Project</a>
       </div>
     </section>
     <!-- Third Section -->
@@ -171,7 +190,8 @@
           <li class="languages"><a href="#">css </a></li>
           <li class="languages"><a href="#">javaScript </a></li>
         </ul>
-        <a href="#" class="project__link"> See Project </a>
+        <!-- <a href="#" class="project__link"> See Project </a> -->
+        <a href="javascript:void(0)"   id="project_3" class="project__link" onclick="open_popup(this.id)"> See Project</a>
       </div>
     </section>
     <!-- Fourth Section -->
@@ -207,7 +227,8 @@
           <li class="languages"><a href="#">CSS </a></li>
           <li class="languages"><a href="#">JavaScript </a></li>
         </ul>
-        <a href="#" class="project__link"> See Project </a>
+        <!-- <a href="#" class="project__link"> See Project </a> -->
+        <a href="javascript:void(0)"   id="project_4" class="project__link" onclick="open_popup(this.id)"> See Project</a>
       </div>
     </section>
 
@@ -350,6 +371,8 @@
         </div>
       </footer>
     </div>
+    <script src="popup.js" defer></script>
     <script src="script.js"></script>
+
   </body>
 </html>

@@ -290,6 +290,11 @@ header h1,
   transition: 0.3s;
 }
 
+.popup-header a {
+  text-decoration: none;
+  font-size: 29px;
+}
+
 .project__languages li a {
   text-decoration: none;
   font-size: var(--font-small);
@@ -509,7 +514,7 @@ ul.hug_content {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   left: 0;
   background-color: rgba(38, 44, 100, 0.9);
@@ -535,6 +540,41 @@ ul.hug_content {
   top: 20px;
   right: 45px;
   font-size: 60px;
+}
+
+#overlay-popup {
+  position: fixed;
+  display: none;
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  z-index: 3; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer;
+  overflow-y: scroll;
+}
+
+#overlay-content-popup {
+  position: absolute;
+  top: 0%;
+  left: 10%;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -1rem;
+}
+
+#overlay-content-popup b {
+  margin-left: 1rem;
+}
+
+.popup_extra_languages {
+  display: none;
 }
 
 @media screen and (max-height: 450px) {
@@ -615,7 +655,37 @@ ul.hug_content {
     gap: 25px;
   }
 
+  #portfolio_popup {
+    display: block;
+  }
+
+  #portfolio_popup .work__content {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  #portfolio_popup .project__description {
+    width: 60%;
+    margin-right: 10px;
+  }
+
+  #overlay-content-popup b {
+    margin-left: 2.3rem;
+  }
+
+  .m-t-1 {
+    margin-top: 1.5rem;
+  }
+
+  .popup_extra_languages {
+    display: inline;
+  }
+
   .about {
+    display: flex;
+  }
+
+  .flex {
     display: flex;
   }
 
@@ -628,6 +698,10 @@ ul.hug_content {
   }
 
   .work img {
+    width: 100%;
+  }
+
+  .work_popup img {
     width: 100%;
   }
 
@@ -665,4 +739,13 @@ ul.hug_content {
     background-repeat: no-repeat;
     background-position: 2rem 2rem;
   }
+}
+
+#overlay-content-popup .project__link {
+  font-size: 0.8rem;
+  margin-right: 1rem;
+}
+
+#overlay-content-popup .project__link i {
+  margin-left: 0.5rem;
 }
