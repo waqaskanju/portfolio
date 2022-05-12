@@ -661,11 +661,13 @@ ul.hug_content {
 
   #portfolio_popup .work__content {
     display: flex;
+    flex-wrap: nowrap;
   }
 
   #portfolio_popup .project__description {
-    width: 65%;
-    margin-right: 20px;
+    width: 60%;
+
+    /* margin-right: 10px; */
   }
 
   #overlay-content-popup b {
@@ -681,6 +683,10 @@ ul.hug_content {
   }
 
   .about {
+    display: flex;
+  }
+
+  .flex {
     display: flex;
   }
 
