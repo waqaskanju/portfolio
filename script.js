@@ -40,8 +40,10 @@ const projects = {
     year: "2015",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    language: { first: "html", second: "css", third: "javascript" },
-    image: "./style/pictures/handheld/Tonic.png",
+      language: { first: "html", second: "css", third: "javascript", fourth: "github", fifth: "ruby", sixth: "bootstrap" },
+      image: "./style/pictures/handheld/Tonic.png",
+      linktolive:"#",
+      linktosource:"#"
   },
   project_2: {
     title: "Multi-Post Stories",
@@ -50,8 +52,10 @@ const projects = {
     year: "2015",
     description:
       "Morris Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    language: { first: "html", second: "css", third: "javascript" },
-    image: "./style/pictures/handheld/Multi-Post.png",
+      language: { first: "html", second: "css", third: "javascript", fourth: "github", fifth: "ruby", sixth: "bootstrap" },
+      image: "./style/pictures/handheld/Multi-Post.png",
+      linktolive:"#",
+      linktosource:"#"
   },
   project_3: {
     title: "Facebook_360",
@@ -60,8 +64,10 @@ const projects = {
     year: "2015",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    language: { first: "html", second: "css", third: "javascript" },
-    image: "./style/pictures/handheld/Facebook_360.png",
+      language: { first: "html", second: "css", third: "javascript", fourth: "github", fifth: "ruby", sixth: "bootstrap" },
+      image: "./style/pictures/handheld/Facebook_360.png",
+      linktolive:"#",
+      linktosource:"#"
   },
   project_4: {
     title: "User Navigation",
@@ -70,8 +76,10 @@ const projects = {
     year: "2015",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    language: { first: "html", second: "css", third: "javascript" },
+    language: { first: "html", second: "css", third: "javascript", fourth: "github", fifth: "ruby", sixth: "bootstrap" },
     image: "./style/pictures/handheld/Tonic.png",
+    linktolive:"#",
+    linktosource:"#"
   },
 };
 
@@ -83,4 +91,14 @@ function get_project(val){
    document.getElementById("popup_year").innerText=projects[project]["year"];
    document.getElementById("popup_description").innerText=projects[project]["description"];
    document.getElementById("popup_image").innerText=projects[project]["image"];
+   document.getElementById("html").innerText=projects[project]["language"]["first"];
+   document.getElementById("css").innerText=projects[project]["language"]["second"];
+   document.getElementById("javascript").innerText=projects[project]["language"]["third"];
+   document.getElementById("github").innerText=projects[project]["language"]["fourth"];
+   document.getElementById("ruby").innerText=projects[project]["language"]["fifth"];
+   document.getElementById("bootstraps").innerText=projects[project]["language"]["sixth"];
+   document.getElementById("live_link").href=projects[project]["linktolive"];
+   document.getElementById("source_link").href=projects[project]["linktosource"];
+
 }
+

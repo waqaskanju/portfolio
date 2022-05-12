@@ -666,8 +666,7 @@ ul.hug_content {
 
   #portfolio_popup .project__description {
     width: 60%;
-
-    /* margin-right: 10px; */
+    margin-right: 10px;
   }
 
   #overlay-content-popup b {
@@ -740,4 +739,13 @@ ul.hug_content {
     background-repeat: no-repeat;
     background-position: 2rem 2rem;
   }
+}
+
+#overlay-content-popup .project__link {
+  font-size: 0.8rem;
+  margin-right: 1rem;
+}
+
+#overlay-content-popup .project__link i {
+  margin-left: 0.5rem;
 }
