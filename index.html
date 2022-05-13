@@ -19,7 +19,7 @@
     
     </script>
   </head>
-  <body onresize="closeOverlay()">
+  <body onload=" loadLocalData()" onresize="closeOverlay();">
     <nav>
       <div class="container">
         <div>My Logo</div>
@@ -345,6 +345,7 @@
               class="footer__form footer__form-input"
               placeholder="type your name"
               maxlength="30"
+              oninput="saveName()"
               required
             
             />
@@ -354,6 +355,7 @@
               type="email"
               name="email"
               id="email"
+              oninput="saveEmail()"
               required
               placeholder="type your email"
               
@@ -367,6 +369,7 @@
               rows="8"
               placeholder="type your message here"
               maxlength="500"
+              oninput="saveMsg()"
               required
             ></textarea>
             <small id="error"></small>

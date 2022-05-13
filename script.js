@@ -122,6 +122,50 @@ function closePopup() {
   document.getElementById('overlay-popup').style.display = 'none';
 }
 
+/* Save local data */
+const myData = [];
+let name;
+let email;
+let msg;
+
+function saveName() {
+  name = document.getElementById('name').value;
+  email = document.getElementById('email').value;
+  msg = document.getElementById('message').value;
+  myData[0] = name;
+  myData[1] = email;
+  myData[2] = msg;
+  localStorage.setItem('my_values', JSON.stringify(myData));
+}
+
+function saveEmail() {
+  name = document.getElementById('name').value;
+  email = document.getElementById('email').value;
+  msg = document.getElementById('message').value;
+  myData[0] = name;
+  myData[1] = email;
+  myData[2] = msg;
+  localStorage.setItem('my_values', JSON.stringify(myData));
+}
+function saveMsg() {
+  name = document.getElementById('name').value;
+  email = document.getElementById('email').value;
+  msg = document.getElementById('message').value;
+  myData[0] = name;
+  myData[1] = email;
+  myData[2] = msg;
+  localStorage.setItem('my_values', JSON.stringify(myData));
+}
+
+function loadLocalData() {
+  const d = localStorage.getItem('my_values');
+  const data = JSON.parse(d);
+  const [name, email, message] = data;
+  document.getElementById('name').value = name;
+  document.getElementById('email').value = email;
+  document.getElementById('message').value = message;
+}
+
 const alpha = 1;
 const beta = 2;
 if (alpha === beta) {
@@ -130,4 +174,8 @@ if (alpha === beta) {
   openNav();
   closeNav();
   closeOverlay();
+  loadLocalData();
+  saveEmail();
+  saveName();
+  saveMsg();
 }
