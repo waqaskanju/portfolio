@@ -1,174 +1,166 @@
+const overlayContent = document.getElementById('overlay-content-popup');
+const section = document.createElement('section');
+section.classList.add('work');
+section.setAttribute('id', 'portfolio_popup');
 
-        const overlay_cotent = document.getElementById("overlay-content-popup");
-        const section = document.createElement("section");
-        section.classList.add("work");
-        section.setAttribute('id', "portfolio_popup");
+/* Create DIV 1 */
 
-        /*Create DIV 1  */
+const popupHeader = document.createElement('div');
+popupHeader.classList.add('popup-header');
+section.appendChild(popupHeader);
 
-        const popup_header = document.createElement("div");
-        popup_header.classList.add("popup-header");
-        section.appendChild(popup_header);
+/* inside popupHeader add h3 and a */
+const h3Title = document.createElement('h3');
+popupHeader.appendChild(h3Title);
+h3Title.classList.add('project__name');
+h3Title.setAttribute('id', 'popup_title');
 
-        /* inside popup_header add h3 and a */
-        const h3_title = document.createElement("h3");
-        popup_header.appendChild(h3_title);
-        h3_title.classList.add("project__name");
-        h3_title.setAttribute("id","popup_title");
+const popupCloseButton = document.createElement('a');
+// popupCloseButton.setAttribute('href', 'javascript:void(0)');
+popupCloseButton.setAttribute('onclick', 'closePopup()');
+popupCloseButton.innerHTML = '&times;';
+popupHeader.appendChild(popupCloseButton);
 
-        const popup_close_button = document.createElement("a");
-        popup_close_button.setAttribute("href","javascript:void(0)");
-        popup_close_button.setAttribute("href","javascript:void(0)");
-        popup_close_button.setAttribute("onclick","close_popup()");
-        popup_close_button.innerHTML="&times;";
-        popup_header.appendChild(popup_close_button);
+/* add span to section */
+const projectRoleContainer = document.createElement('span');
+projectRoleContainer.classList.add('project__role__container');
+section.appendChild(projectRoleContainer);
+/* add b to section */
+const popupSubTitle = document.createElement('b');
+popupSubTitle.classList.add('project__conopy_popup');
+popupSubTitle.setAttribute('id', 'popup_sub_title');
+section.appendChild(popupSubTitle);
+/* add ul to section */
+const languages = document.createElement('ul');
+languages.classList.add('project__role');
+languages.classList.add('hug_content');
+/* Add 2 li to ul */
+const role = document.createElement('li');
+role.setAttribute('id', 'popup_role');
+languages.appendChild(role);
+const year = document.createElement('li');
+year.setAttribute('id', 'popup_year');
+languages.appendChild(year);
+section.appendChild(languages);
+/* Add picture div */
+const pictureContainer = document.createElement('div');
+pictureContainer.classList.add('work_picture--container');
+const picture = document.createElement('picture');
+pictureContainer.appendChild(picture);
+const source = document.createElement('source');
+source.setAttribute('srcset', './style/pictures/desktop/Tonic.png');
+source.setAttribute('media', '(min-width: 785px)');
+const img = document.createElement('img');
+img.setAttribute('src', './style/pictures/handheld/Tonic.png');
+img.setAttribute('id', 'popup_image');
+img.setAttribute('alt', 'Tonic');
+picture.appendChild(source);
+picture.appendChild(img);
+section.appendChild(pictureContainer);
 
-        /* add span to section */
-        const project_role_container=document.createElement("span");
-        project_role_container.classList.add("project__role__container");
-        section.appendChild(project_role_container);
-         /* add b to section */
-        const popup_sub_title = document.createElement("b");
-        popup_sub_title.classList.add("project__conopy_popup");
-        popup_sub_title.setAttribute("id","popup_sub_title");
-        section.appendChild(popup_sub_title);
-          /* add ul to section */
-        const languages =document.createElement("ul");
-        languages.classList.add("project__role");
-        languages.classList.add("hug_content");
-        /* Add 2 li to ul */
-        const role= document.createElement("li");
-        role.setAttribute("id","popup_role");
-        languages.appendChild(role);
-        const year= document.createElement("li");
-        year.setAttribute("id","popup_year");
-        languages.appendChild(year);
-        section.appendChild(languages);
-        /* Add picture div */
-        const picture_container =document.createElement("div");
-        picture_container.classList.add("work_picture--container");
-        const picture=document.createElement("picture");
-        picture_container.appendChild(picture);
-        const source= document.createElement("source");
-        source.setAttribute("srcset","./style/pictures/desktop/Tonic.png");
-        source.setAttribute("media","(min-width: 785px)")
-        const img=document.createElement("img");
-        img.setAttribute("src","./style/pictures/handheld/Tonic.png");
-        img.setAttribute("id","popup_image");
-        img.setAttribute("alt","Tonic");
-        picture.appendChild(source);
-        picture.appendChild(img);
-        section.appendChild(picture_container);
+/* Work Content */
+const workContent = document.createElement('div');
+workContent.classList.add('work__content');
+section.appendChild(workContent);
 
-        /* Work Content */
-        const work_content=document.createElement("div");
-        work_content.classList.add("work__content");
-        section.appendChild(work_content);
-        
-        const description=document.createElement("p");
-        description.classList.add("project__description");
-        description.setAttribute("id","popup_description");
-        work_content.appendChild(description);
+const description = document.createElement('p');
+description.classList.add('project__description');
+description.setAttribute('id', 'popup_description');
+workContent.appendChild(description);
 
-        const project_l= document.createElement("div");
-        work_content.appendChild(project_l);
-        
-        const top_languages= document.createElement("ul");
-        top_languages.classList.add("project__languages");
+const projectL = document.createElement('div');
+workContent.appendChild(projectL);
 
-        const html =document.createElement("li");
-        html.classList.add("languages");	
-	
+const topLanguages = document.createElement('ul');
+topLanguages.classList.add('project__languages');
 
-        const css =document.createElement("li");
-        css.classList.add("languages");
-        const javascript =document.createElement("li");
-        javascript.classList.add("languages");
-	
-        top_languages.appendChild(html);
-        top_languages.appendChild(css);
-        top_languages.appendChild(javascript);
-        project_l.appendChild(top_languages);
+const html = document.createElement('li');
+html.classList.add('languages');
 
-        const link_html = document.createElement("a");
-        link_html.href = "#";
-        const link_css = document.createElement("a");
-        link_css.href = "#";
-        const link_javascript = document.createElement("a");
-        link_javascript.href = "#";
+const css = document.createElement('li');
+css.classList.add('languages');
+const javascript = document.createElement('li');
+javascript.classList.add('languages');
 
-        link_html.setAttribute("id", "html");
-        link_css.setAttribute("id", "css");
-        link_javascript.setAttribute("id", "javascript");
-  
+topLanguages.appendChild(html);
+topLanguages.appendChild(css);
+topLanguages.appendChild(javascript);
+projectL.appendChild(topLanguages);
 
-    	html.appendChild(link_html);
-        css.appendChild(link_css);
-    	javascript.appendChild(link_javascript);
+const linkHtml = document.createElement('a');
+linkHtml.href = '#';
+const linkCss = document.createElement('a');
+linkCss.href = '#';
+const linkJavascript = document.createElement('a');
+linkJavascript.href = '#';
 
-        const bottom_languages= document.createElement("ul");
-        bottom_languages.classList.add("project__languages", "m-t-1");
-        const github =document.createElement("li");
-        github.classList.add("languages");
-        github.classList.add("popup_extra_languages");
-        const ruby =document.createElement("li");
-        ruby.classList.add("languages");
-        ruby.classList.add("popup_extra_languages");
-        const bootstraps =document.createElement("li");
-        bootstraps.classList.add("languages");
-        bootstraps.classList.add("popup_extra_languages");
+linkHtml.setAttribute('id', 'html');
+linkCss.setAttribute('id', 'css');
+linkJavascript.setAttribute('id', 'javascript');
 
-        bottom_languages.appendChild(github);
-        bottom_languages.appendChild(ruby);
-        bottom_languages.appendChild(bootstraps);
+html.appendChild(linkHtml);
+css.appendChild(linkCss);
+javascript.appendChild(linkJavascript);
 
-        const link_github = document.createElement("a");
-        link_github.href = "#";
-        const link_ruby = document.createElement("a");
-        link_ruby.href = "#";
-        const link_bootstraps = document.createElement("a");
-        link_bootstraps.href = "#";
+const bottomLanguages = document.createElement('ul');
+bottomLanguages.classList.add('project__languages', 'm-t-1');
+const github = document.createElement('li');
+github.classList.add('languages');
+github.classList.add('popup_extra_languages');
+const ruby = document.createElement('li');
+ruby.classList.add('languages');
+ruby.classList.add('popup_extra_languages');
+const bootstraps = document.createElement('li');
+bootstraps.classList.add('languages');
+bootstraps.classList.add('popup_extra_languages');
 
-        github.appendChild(link_github);
-        ruby.appendChild(link_ruby);
-        bootstraps.appendChild(link_bootstraps);
+bottomLanguages.appendChild(github);
+bottomLanguages.appendChild(ruby);
+bottomLanguages.appendChild(bootstraps);
 
-        link_github.setAttribute("id", "github");
-        link_ruby.setAttribute("id", "ruby");
-        link_bootstraps.setAttribute("id", "bootstraps");
+const linkGithub = document.createElement('a');
+linkGithub.href = '#';
+const linkRuby = document.createElement('a');
+linkRuby.href = '#';
+const linkBootstraps = document.createElement('a');
+linkBootstraps.href = '#';
 
-        project_l.appendChild(bottom_languages);
-	 
+github.appendChild(linkGithub);
+ruby.appendChild(linkRuby);
+bootstraps.appendChild(linkBootstraps);
 
+linkGithub.setAttribute('id', 'github');
+linkRuby.setAttribute('id', 'ruby');
+linkBootstraps.setAttribute('id', 'bootstraps');
 
-	const m_t_1 = document.createElement("div");
-        	m_t_1.classList.add("m_t_1");
-        project_l.appendChild(m_t_1);
+projectL.appendChild(bottomLanguages);
 
-        const see_live = document.createElement("a");
-        see_live.href = "javascript:void(0)"
-        see_live.classList.add("project__link")
-        see_live.setAttribute("onclick", "open_popup()");
+const mTL = document.createElement('div');
+mTL.classList.add('mTL');
+projectL.appendChild(mTL);
 
-        const fa_circle = document.createElement("i");
-        fa_circle.classList.add("fa", "fa-circle-o-notch")
+const seeLive = document.createElement('a');
+// seeLive.href = 'javascript:void(0)'
+seeLive.classList.add('project__link');
+seeLive.setAttribute('onclick', 'open_popup()');
 
-        
-        m_t_1.appendChild(see_live);
+const faCircle = document.createElement('i');
+faCircle.classList.add('fa', 'fa-circle-o-notch');
+mTL.appendChild(seeLive);
 
-        const see_source = document.createElement("a");
-        m_t_1.appendChild(see_source);
-	    see_source.href = "javascript:void(0)"
-        see_source.classList.add("project__link")
-        see_source.setAttribute("onclick", "open_popup()");
-        const fa_brands = document.createElement("i");
-        fa_brands.classList.add("fa-brands", "fa-github")
-        see_live.innerHTML = "See Live";
-        see_source.innerHTML = "See Source";
-        see_live.setAttribute("id", "live_link")
-        see_source.setAttribute("id", "source_link")
+const seeSource = document.createElement('a');
+mTL.appendChild(seeSource);
+// seeSource.href = 'javascript:void(0)';
+seeSource.classList.add('project__link');
+seeSource.setAttribute('onclick', 'open_popup()');
+const faBrands = document.createElement('i');
+faBrands.classList.add('fa-brands', 'fa-github');
+seeLive.innerHTML = 'See Live';
+seeSource.innerHTML = 'See Source';
+seeLive.setAttribute('id', 'live_link');
+seeSource.setAttribute('id', 'source_link');
 
-        see_live.appendChild(fa_circle)
-        see_source.appendChild(fa_brands)
+seeLive.appendChild(faCircle);
+seeSource.appendChild(faBrands);
 
-	overlay_cotent.appendChild(section);
+overlayContent.appendChild(section);
