@@ -245,7 +245,6 @@ header h1,
   margin-inline: auto;
 
   /* THis Thing below has to  #Be_Changed */
-
   width: min(20.4375rem, 200rem);
   border-radius: 1rem;
   border: 1px solid var(--clr-border);
