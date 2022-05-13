@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style/css/main.css" />
     <title>Portfolio Waqas Ahmad</title>
+    <script>
+    
+    </script>
   </head>
   <body onresize="close_overlay()">
     <nav>
@@ -318,7 +321,7 @@
         </div>
       </section>
     </div>
-
+    <!-- Contact Us Page -->
     <div class="footer-wrap">
       <footer id="contact">
         <div class="footer-container">
@@ -328,10 +331,12 @@
             feature that you need built or a project that needs coding. I’d love
             to help with it
           </p>
+          <!-- Contact US form -->
           <form
             class="footer__form"
             action="https://formspree.io/f/mwkywvdn"
             method="post"
+            id="contact_msg"
           >
           <label for="name" class="footer__Form footer__form-label">Name:</label>
             <input
@@ -365,12 +370,16 @@
               maxlength="500"
               required
             ></textarea>
+            <small id="error"></small>
               <input class="contact_submit" type="submit" value="Get it Touch"/>
             
           </form>
         </div>
       </footer>
     </div>
+    <script>
+
+    </script>
     <script src="popup.js" defer></script>
     <script src="script.js"></script>
 

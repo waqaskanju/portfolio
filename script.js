@@ -1,3 +1,18 @@
+const form = document.getElementById("contact_msg");
+form.addEventListener("submit", (event) => {
+  let actual = form.elements["email"].value;
+  allowed = actual.toLowerCase();
+  if (actual == allowed) {
+    form.submit();
+  } else {
+   const small= document.getElementById("error");
+   small.style.color="white";
+   small.style.fontSize="12px";
+   small.style.marginBlock="20px";
+      small.innerText= "Email Should be in lowercase, Form Not Submitted"
+    event.preventDefault();
+  }
+});
 function openNav() {
   document.getElementById("myNav").style.width = "100%";
   document.getElementById("mylist").style.display="block";
@@ -101,4 +116,5 @@ function get_project(val){
    document.getElementById("source_link").href=projects[project]["linktosource"];
 
 }
+
 
