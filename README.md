@@ -1,6 +1,6 @@
 # Portfolio Repo
 
-This Repo is for creating a simple portoflio project.
+This Repo is for creating a simple portoflio project. It was one to the task in Microvese journey of learning HTML and CSS and create a dynamic website
 
 ## Built With
 
